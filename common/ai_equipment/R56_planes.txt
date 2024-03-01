@@ -1,0 +1,590 @@
+R56_fighter = {
+	category = air
+
+	roles = {
+		air_fighter
+	}
+
+	priority = {
+		factor = 1000
+	}
+
+	great_war_fighter_default = {
+		priority = {
+			factor = 500
+			modifier = { 
+				has_tech = basic_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		target_variant = {
+			match_value = 100
+			type = small_plane_airframe_0
+			modules = {
+				fixed_main_weapon_slot = { module = light_mg_4x }
+				fixed_auxiliary_weapon_slot_1 = { module = light_mg_4x }
+				engine_type_slot = { module > engine_1_1x module = engine_1_1x}
+				special_type_slot_1 = { module = armor_plate_small module = empty }
+				special_type_slot_2 = empty 
+			}
+		}
+
+		allowed_modules = {
+			plane_engine_type
+			fighter_weapon
+
+			drop_tanks
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+
+	basic_fighter_default = {
+		priority = {
+			factor = 600
+			modifier = { 
+				has_tech = improved_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		target_variant = {
+			match_value = 200
+			type = small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = light_mg_4x
+				fixed_auxiliary_weapon_slot_1 = { module = heavy_mg_4x module = light_mg_4x module = light_mg_2x}
+				engine_type_slot > engine_1_1x
+				special_type_slot_1 = { module = armor_plate_small module = empty }
+				special_type_slot_2 = { module = drop_tanks module = empty }	
+			}
+		}
+
+		allowed_modules = {
+			plane_engine_type
+			fighter_weapon
+
+			drop_tanks
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+
+	improved_fighter_default_old_engine = {
+		priority = {
+			factor = 600
+			modifier = { 
+				has_tech = advanced_small_airframe 
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		target_variant = {
+			match_value = 290
+			type = small_plane_airframe_2
+			modules = {
+				fixed_main_weapon_slot = light_mg_4x
+				fixed_auxiliary_weapon_slot_1 = light_mg_4x
+				fixed_auxiliary_weapon_slot_2 = light_mg_4x
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = { module = armor_plate_small module = drop_tanks module = empty }
+				special_type_slot_2 = empty	
+				special_type_slot_3 = empty	
+			}
+		}
+
+		allowed_modules = {
+			plane_engine_type
+			fighter_weapon
+
+			drop_tanks
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+
+	improved_fighter_default = {
+		priority = {
+			factor = 600
+			modifier = { 
+				has_tech = advanced_small_airframe 
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		target_variant = {
+			match_value = 300
+			type = small_plane_airframe_2
+			modules = {
+				fixed_main_weapon_slot = {module = heavy_mg_4x module = light_mg_4x}
+				fixed_auxiliary_weapon_slot_1 = { module = heavy_mg_4x module = light_mg_4x }
+				fixed_auxiliary_weapon_slot_2 = light_mg_4x
+				engine_type_slot > engine_2_1x
+				special_type_slot_1 = { module = armor_plate_small module = empty }
+				special_type_slot_2 = { module = drop_tanks module = empty }
+				special_type_slot_3 = empty	
+			}
+		}
+
+		allowed_modules = {
+			plane_engine_type
+			fighter_weapon
+
+			drop_tanks
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+
+	advanced_fighter_default_old_engine = {
+		priority = {
+			factor = 600
+			modifier = { 
+				has_tech = modern_small_airframe 
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		target_variant = {
+			match_value = 390
+			type = small_plane_airframe_3
+			modules = {
+				fixed_main_weapon_slot = { module = heavy_mg_4x module = light_mg_4x }
+				fixed_auxiliary_weapon_slot_1 = light_mg_4x
+				fixed_auxiliary_weapon_slot_2 = light_mg_4x
+				fixed_auxiliary_weapon_slot_3 = empty
+				engine_type_slot = engine_3_1x
+				special_type_slot_1 = { module = armor_plate_small module = empty }
+				special_type_slot_2 = { module = drop_tanks module = empty }
+				special_type_slot_3 = empty	
+			}
+		}
+
+		allowed_modules = {
+			plane_engine_type
+			fighter_weapon
+
+			drop_tanks
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+
+	advanced_fighter_default = {
+		priority = {
+			factor = 600
+			modifier = { 
+				has_tech = modern_small_airframe 
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		target_variant = {
+			match_value = 400
+			type = small_plane_airframe_3
+			modules = {
+				fixed_main_weapon_slot = { module = aircraft_cannon_1_2x module = heavy_mg_4x module = light_mg_4x }
+				fixed_auxiliary_weapon_slot_1 = { module = heavy_mg_4x module = light_mg_4x }
+				fixed_auxiliary_weapon_slot_2 = { module = heavy_mg_4x module = light_mg_4x }
+				fixed_auxiliary_weapon_slot_3 = empty
+				engine_type_slot = engine_4_1x
+				special_type_slot_1 = { module = armor_plate_small module = empty }
+				special_type_slot_2 = { module = drop_tanks module = empty }
+				special_type_slot_3 = empty	
+			}
+		}
+
+		allowed_modules = {
+			plane_engine_type
+			fighter_weapon
+
+			drop_tanks
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+
+	jet_fighter_default_prop = {
+		priority = {
+			factor = 10
+			#modifier = { 
+			#	has_tech = modern_small_airframe_2
+			#	factor = 0 #let's not waste XP here
+			#}
+		}
+
+		target_variant = {
+			match_value = 380
+			type = small_plane_airframe_4
+			modules = {
+				fixed_main_weapon_slot = {
+					module = aircraft_cannon_2_2x
+					module = aircraft_cannon_1_2x
+					module = heavy_mg_4x
+					module = light_mg_4x
+				}
+				fixed_auxiliary_weapon_slot_1 = {
+					module = aircraft_cannon_2_2x
+					module = aircraft_cannon_1_2x
+					module = heavy_mg_4x
+					module = light_mg_4x
+				}
+				fixed_auxiliary_weapon_slot_2 = light_mg_2x
+				fixed_auxiliary_weapon_slot_3 = empty
+				engine_type_slot = engine_4_1x
+				special_type_slot_1 = armor_plate_small
+				special_type_slot_2 = drop_tanks	
+				special_type_slot_3 = empty
+				
+			}
+		}
+
+		allowed_modules = {
+			plane_engine_type
+			fighter_weapon
+
+			drop_tanks
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+}
+
+R56_CAS = { 
+    category = air
+
+	roles = {
+		air_fighter
+	}
+
+	priority = {
+		factor = 1000
+	}
+ }
+
+generic_naval_bomber = {
+	category = air
+
+	roles = {
+		air_naval_bomber
+	}
+
+	priority = {
+		factor = 500
+	}
+
+	naval_bomber_0 = {
+		priority = {
+			factor = 50
+			modifier = { 
+				has_tech = basic_small_airframe 
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 100
+			type = small_plane_naval_bomber_airframe_0
+			modules = {
+				fixed_main_weapon_slot = torpedo_mounting
+				fixed_auxiliary_weapon_slot_1 = empty
+				engine_type_slot = { module > engine_1_1x module = engine_1_1x}
+				special_type_slot_1 = { module = drop_tanks module = armor_plate_small module = empty}
+				special_type_slot_2 = empty
+			}
+		}
+		allowed_modules = {
+			nav_bomber_weapon
+			plane_engine_type
+			plane_jet_engine_type
+
+			drop_tanks
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+	
+	naval_bomber_1 = {
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = improved_small_airframe 
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 100
+			type = small_plane_naval_bomber_airframe_1
+			modules = {
+				fixed_main_weapon_slot = torpedo_mounting
+				fixed_auxiliary_weapon_slot_1 = empty
+				engine_type_slot > engine_1_1x
+				special_type_slot_1 = { module = floats module = empty}
+				special_type_slot_2 = { module = drop_tanks module = empty}
+			}
+		}
+		allowed_modules = {
+			nav_bomber_weapon
+			plane_engine_type
+			plane_jet_engine_type
+
+			drop_tanks
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+
+	naval_bomber_2_old_engine = {
+		priority = {
+			factor = 200
+			modifier = { 
+				has_tech = advanced_small_airframe 
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 140
+			type = small_plane_naval_bomber_airframe_2
+			modules = {
+				fixed_main_weapon_slot = torpedo_mounting
+				fixed_auxiliary_weapon_slot_1 = empty
+				fixed_auxiliary_weapon_slot_2 = empty
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = lmg_defense_turret
+				special_type_slot_2 = { module = drop_tanks module = empty}	
+				special_type_slot_3 = empty		
+			}
+		}
+		allowed_modules = {
+			nav_bomber_weapon
+			plane_engine_type
+			plane_jet_engine_type
+
+			drop_tanks
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+
+	naval_bomber_2 = {
+		priority = {
+			factor = 200
+			modifier = { 
+				has_tech = advanced_small_airframe 
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 150
+			type = small_plane_naval_bomber_airframe_2
+			modules = {
+				fixed_main_weapon_slot = { module = torpedo_mounting_1 module = torpedo_mounting}
+				fixed_auxiliary_weapon_slot_1 = empty
+				fixed_auxiliary_weapon_slot_2 = empty
+				engine_type_slot > engine_2_1x
+				special_type_slot_1 = { module = hmg_defense_turret module = lmg_defense_turret module = empty }
+				special_type_slot_2 = { module = drop_tanks module = empty}	
+				special_type_slot_3 = { module = armor_plate_small module = empty }
+			}
+		}
+		allowed_modules = {
+			nav_bomber_weapon
+			plane_engine_type
+			plane_jet_engine_type
+
+			drop_tanks
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+
+	naval_bomber_3_old_engine = {
+		priority = {
+			factor = 200
+			modifier = { 
+				has_tech = modern_small_airframe 
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 190
+			type = small_plane_naval_bomber_airframe_3
+			modules = {
+				fixed_main_weapon_slot = { module = torpedo_mounting_1 module = torpedo_mounting}
+				fixed_auxiliary_weapon_slot_1 = empty
+				fixed_auxiliary_weapon_slot_2 = empty
+				fixed_auxiliary_weapon_slot_3 = empty
+				engine_type_slot = engine_3_1x
+				special_type_slot_1 = { module = hmg_defense_turret module = lmg_defense_turret module = empty }
+				special_type_slot_2 = { module = drop_tanks module = empty}	
+				special_type_slot_3 = { module = armor_plate_small module = empty}
+			}
+		}
+
+		allowed_modules = {
+			nav_bomber_weapon
+			plane_engine_type
+			plane_jet_engine_type
+
+			drop_tanks
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+
+	naval_bomber_3 = {
+		priority = {
+			factor = 200
+			modifier = { 
+				has_tech = modern_small_airframe 
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 200
+			type = small_plane_naval_bomber_airframe_3
+			modules = {
+				fixed_main_weapon_slot = {
+					module = torpedo_mounting_2
+					module = torpedo_mounting_1
+					module = torpedo_mounting
+				}
+				fixed_auxiliary_weapon_slot_1 = empty
+				fixed_auxiliary_weapon_slot_2 = empty
+				fixed_auxiliary_weapon_slot_3 = empty
+				engine_type_slot = engine_4_1x
+				special_type_slot_1 = { module = hmg_defense_turret module = lmg_defense_turret module = empty }
+				special_type_slot_2 = { module = drop_tanks module = empty}	
+				special_type_slot_3 = { module = armor_plate_small module = empty}
+			}
+		}
+
+		allowed_modules = {
+			nav_bomber_weapon
+			plane_engine_type
+			plane_jet_engine_type
+
+			drop_tanks
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+
+	naval_bomber_4_old_engine = {
+		priority = {
+			factor = 200
+		}
+		target_variant = {
+			match_value = 240
+			type = small_plane_naval_bomber_airframe_4
+			modules = {
+				fixed_main_weapon_slot = torpedo_mounting
+				fixed_auxiliary_weapon_slot_1 = empty
+				fixed_auxiliary_weapon_slot_2 = empty
+				fixed_auxiliary_weapon_slot_3 = empty
+				engine_type_slot = engine_3_1x
+				special_type_slot_1 = { module = drop_tanks module = empty}
+				special_type_slot_2 = { module = hmg_defense_turret module = lmg_defense_turret module = empty }
+				special_type_slot_3 = { module = armor_plate_small module = empty}
+			}
+
+		}
+
+		allowed_modules = {
+			nav_bomber_weapon
+			plane_engine_type
+			plane_jet_engine_type
+
+			drop_tanks
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+
+	naval_bomber_4 = {
+		priority = {
+			factor = 200
+		}
+		target_variant = {
+			match_value = 250
+			type = small_plane_naval_bomber_airframe_4
+			modules = {
+				fixed_main_weapon_slot = { module = torpedo_mounting_2 module = torpedo_mounting_1 module = torpedo_mounting }
+				fixed_auxiliary_weapon_slot_1 = empty
+				fixed_auxiliary_weapon_slot_2 = empty
+				fixed_auxiliary_weapon_slot_3 = empty
+				engine_type_slot = engine_4_1x
+				special_type_slot_1 = { module = drop_tanks module = empty}
+				special_type_slot_2 = { module = hmg_defense_turret module = lmg_defense_turret module = empty }
+				special_type_slot_3 = { module = armor_plate_small module = empty}
+			}
+
+		}
+
+		allowed_modules = {
+			nav_bomber_weapon
+			plane_engine_type
+			plane_jet_engine_type
+
+			drop_tanks
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+}
+
+R56_cv_fighter = {
+    category = air
+
+	roles = {
+		air_fighter
+	}
+}
+
+R56_cv_naval_bomber = {
+	category = air
+
+	roles = {
+		air_cv_cas
+	}
+}
+
+generic_tactical_bomber = {
+	category = air
+
+	roles = {
+		air_tactical_bomber
+	}
+}
+
+generic_heavy_fighter = {
+	category = air
+
+	roles = {
+		air_heavy_fighter
+	}
+}
+
+generic_scout_plane = {
+	category = air
+	
+	roles = {
+		air_scout_plane
+	}
+}
+
+generic_strategic_bomber = {
+	category = air
+
+	roles = {
+		air_strategic_bomber
+    }
+}
+
+generic_maritime_patrol = {
+	category = air
+
+	roles = {
+		air_maritime_patrol
+	}
+}

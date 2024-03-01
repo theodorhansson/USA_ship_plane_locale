@@ -39,24 +39,20 @@ generic_fighter = {
 		}
 
 		target_variant = {
-			match_value = 100
+			match_value = 1000
 			type = small_plane_airframe_0
 			modules = {
-				fixed_main_weapon_slot = { module = light_mg_4x }
-				fixed_auxiliary_weapon_slot_1 = { module = light_mg_4x }
-				engine_type_slot = { module > engine_1_1x module = engine_1_1x}
-				special_type_slot_1 = { module = armor_plate_small module = empty }
-				special_type_slot_2 = empty 
+				fixed_main_weapon_slot = light_mg_4x
+				fixed_auxiliary_weapon_slot_1 = empty
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty	
 			}
 		}
 
 		allowed_modules = {
-			plane_engine_type
-			fighter_weapon
-
-			drop_tanks
-			armor_plate_small
-			self_sealing_fuel_tanks_small
+			engine_1_1x
+			light_mg_4x
 		}
 	}
 
@@ -70,57 +66,22 @@ generic_fighter = {
 		}
 
 		target_variant = {
-			match_value = 200
+			match_value = 2000
 			type = small_plane_airframe_1
 			modules = {
 				fixed_main_weapon_slot = light_mg_4x
-				fixed_auxiliary_weapon_slot_1 = { module = heavy_mg_4x module = light_mg_4x module = light_mg_2x}
-				engine_type_slot > engine_1_1x
-				special_type_slot_1 = { module = armor_plate_small module = empty }
-				special_type_slot_2 = { module = drop_tanks module = empty }	
-			}
-		}
-
-		allowed_modules = {
-			plane_engine_type
-			fighter_weapon
-
-			drop_tanks
-			armor_plate_small
-			self_sealing_fuel_tanks_small
-		}
-	}
-
-	improved_fighter_default_old_engine = {
-		priority = {
-			factor = 600
-			modifier = { 
-				has_tech = advanced_small_airframe 
-				factor = 0 #let's not waste XP here
-			}
-		}
-
-		target_variant = {
-			match_value = 290
-			type = small_plane_airframe_2
-			modules = {
-				fixed_main_weapon_slot = light_mg_4x
-				fixed_auxiliary_weapon_slot_1 = light_mg_4x
-				fixed_auxiliary_weapon_slot_2 = light_mg_4x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_1x
 				engine_type_slot = engine_2_1x
-				special_type_slot_1 = { module = armor_plate_small module = drop_tanks module = empty }
+				special_type_slot_1 = empty
 				special_type_slot_2 = empty	
-				special_type_slot_3 = empty	
 			}
 		}
 
 		allowed_modules = {
-			plane_engine_type
-			fighter_weapon
-
-			drop_tanks
+			light_mg_4x
+			aircraft_cannon_1_1x
+			engine_2_1x
 			armor_plate_small
-			self_sealing_fuel_tanks_small
 		}
 	}
 
@@ -134,60 +95,23 @@ generic_fighter = {
 		}
 
 		target_variant = {
-			match_value = 300
+			match_value = 3000
 			type = small_plane_airframe_2
 			modules = {
-				fixed_main_weapon_slot = {module = heavy_mg_4x module = light_mg_4x}
-				fixed_auxiliary_weapon_slot_1 = { module = heavy_mg_4x module = light_mg_4x }
-				fixed_auxiliary_weapon_slot_2 = light_mg_4x
-				engine_type_slot > engine_2_1x
-				special_type_slot_1 = { module = armor_plate_small module = empty }
-				special_type_slot_2 = { module = drop_tanks module = empty }
-				special_type_slot_3 = empty	
-			}
-		}
-
-		allowed_modules = {
-			plane_engine_type
-			fighter_weapon
-
-			drop_tanks
-			armor_plate_small
-			self_sealing_fuel_tanks_small
-		}
-	}
-
-	advanced_fighter_default_old_engine = {
-		priority = {
-			factor = 600
-			modifier = { 
-				has_tech = modern_small_airframe 
-				factor = 0 #let's not waste XP here
-			}
-		}
-
-		target_variant = {
-			match_value = 390
-			type = small_plane_airframe_3
-			modules = {
-				fixed_main_weapon_slot = { module = heavy_mg_4x module = light_mg_4x }
-				fixed_auxiliary_weapon_slot_1 = light_mg_4x
-				fixed_auxiliary_weapon_slot_2 = light_mg_4x
-				fixed_auxiliary_weapon_slot_3 = empty
+				fixed_main_weapon_slot = light_mg_4x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+				fixed_auxiliary_weapon_slot_2 = empty
 				engine_type_slot = engine_3_1x
-				special_type_slot_1 = { module = armor_plate_small module = empty }
-				special_type_slot_2 = { module = drop_tanks module = empty }
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty	
 				special_type_slot_3 = empty	
 			}
 		}
 
 		allowed_modules = {
-			plane_engine_type
-			fighter_weapon
-
-			drop_tanks
-			armor_plate_small
-			self_sealing_fuel_tanks_small
+			light_mg_4x
+			aircraft_cannon_1_2x
+			engine_3_1x
 		}
 	}
 
@@ -201,31 +125,28 @@ generic_fighter = {
 		}
 
 		target_variant = {
-			match_value = 400
+			match_value = 4000
 			type = small_plane_airframe_3
 			modules = {
-				fixed_main_weapon_slot = { module = aircraft_cannon_1_2x module = heavy_mg_4x module = light_mg_4x }
-				fixed_auxiliary_weapon_slot_1 = { module = heavy_mg_4x module = light_mg_4x }
-				fixed_auxiliary_weapon_slot_2 = { module = heavy_mg_4x module = light_mg_4x }
+				fixed_main_weapon_slot = aircraft_cannon_1_2x
+				fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+				fixed_auxiliary_weapon_slot_2 = empty
 				fixed_auxiliary_weapon_slot_3 = empty
 				engine_type_slot = engine_4_1x
-				special_type_slot_1 = { module = armor_plate_small module = empty }
-				special_type_slot_2 = { module = drop_tanks module = empty }
+				special_type_slot_1 = armor_plate_small
+				special_type_slot_2 = empty	
 				special_type_slot_3 = empty	
 			}
 		}
 
-		allowed_modules = {
-			plane_engine_type
-			fighter_weapon
-
-			drop_tanks
+		allowed_modules = { 
+			aircraft_cannon_2_2x
+			heavy_mg_4x
+			engine_4_1x
 			armor_plate_small
-			self_sealing_fuel_tanks_small
 		}
 	}
-
-	jet_fighter_default_prop = {
+	jet_fighter_default = {
 		priority = {
 			factor = 10
 			#modifier = { 
@@ -235,38 +156,26 @@ generic_fighter = {
 		}
 
 		target_variant = {
-			match_value = 380
+			match_value = 4000
 			type = small_plane_airframe_4
 			modules = {
-				fixed_main_weapon_slot = {
-					module = aircraft_cannon_2_2x
-					module = aircraft_cannon_1_2x
-					module = heavy_mg_4x
-					module = light_mg_4x
-				}
-				fixed_auxiliary_weapon_slot_1 = {
-					module = aircraft_cannon_2_2x
-					module = aircraft_cannon_1_2x
-					module = heavy_mg_4x
-					module = light_mg_4x
-				}
-				fixed_auxiliary_weapon_slot_2 = light_mg_2x
+				fixed_main_weapon_slot = aircraft_cannon_2_2x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
+				fixed_auxiliary_weapon_slot_2 = empty
 				fixed_auxiliary_weapon_slot_3 = empty
-				engine_type_slot = engine_4_1x
+				engine_type_slot = jet_engine_2x
 				special_type_slot_1 = armor_plate_small
-				special_type_slot_2 = drop_tanks	
-				special_type_slot_3 = empty
-				
+				special_type_slot_2 = empty	
+				special_type_slot_3 = empty	
 			}
 		}
 
-		allowed_modules = {
-			plane_engine_type
-			fighter_weapon
-
-			drop_tanks
+		allowed_modules = { 
+			aircraft_cannon_2_2x
+			aircraft_cannon_2_2x
+			jet_engine_2x
+			jet_engine_2x_2
 			armor_plate_small
-			self_sealing_fuel_tanks_small
 		}
 	}
 	jet_fighter_default_2 = {
@@ -337,7 +246,7 @@ generic_cas = {
 			}
 		}
 		target_variant = {
-			match_value = 100
+			match_value = 1000
 			type = small_plane_cas_airframe_1
 			modules = {
 				fixed_main_weapon_slot = bomb_locks
@@ -369,7 +278,7 @@ generic_cas = {
 			}
 		}
 		target_variant = {
-			match_value = 150
+			match_value = 1500
 			type = small_plane_cas_airframe_2
 			modules = {
 				fixed_main_weapon_slot = small_bomb_bay
@@ -402,7 +311,7 @@ generic_cas = {
 			}
 		}
 		target_variant = {
-			match_value = 250
+			match_value = 2500
 			type = small_plane_cas_airframe_3
 			modules = {
 				fixed_main_weapon_slot = small_bomb_bay
@@ -436,7 +345,7 @@ generic_cas = {
 			#}
 		}
 		target_variant = {
-			match_value = 300
+			match_value = 3000
 			type = small_plane_cas_airframe_4
 			modules = {
 				fixed_main_weapon_slot = small_bomb_bay
@@ -469,7 +378,7 @@ generic_cas = {
 			factor = 200
 		}
 		target_variant = {
-			match_value = 400
+			match_value = 4000
 			type = small_plane_cas_airframe_4 #5
 			modules = {
 				fixed_main_weapon_slot = small_bomb_bay
@@ -526,37 +435,6 @@ generic_naval_bomber = {
 	priority = {
 		factor = 500
 	}
-
-	naval_bomber_0 = {
-		priority = {
-			factor = 50
-			modifier = { 
-				has_tech = basic_small_airframe 
-				factor = 0 #let's not waste XP here
-			}
-		}
-		target_variant = {
-			match_value = 100
-			type = small_plane_naval_bomber_airframe_0
-			modules = {
-				fixed_main_weapon_slot = torpedo_mounting
-				fixed_auxiliary_weapon_slot_1 = empty
-				engine_type_slot = { module > engine_1_1x module = engine_1_1x}
-				special_type_slot_1 = { module = drop_tanks module = armor_plate_small module = empty}
-				special_type_slot_2 = empty
-			}
-		}
-		allowed_modules = {
-			nav_bomber_weapon
-			plane_engine_type
-			plane_jet_engine_type
-
-			drop_tanks
-			armor_plate_small
-			self_sealing_fuel_tanks_small
-		}
-	}
-	
 	naval_bomber_1 = {
 		priority = {
 			factor = 100
@@ -566,59 +444,21 @@ generic_naval_bomber = {
 			}
 		}
 		target_variant = {
-			match_value = 100
+			match_value = 1000
 			type = small_plane_naval_bomber_airframe_1
 			modules = {
 				fixed_main_weapon_slot = torpedo_mounting
 				fixed_auxiliary_weapon_slot_1 = empty
-				engine_type_slot > engine_1_1x
-				special_type_slot_1 = { module = floats module = empty}
-				special_type_slot_2 = { module = drop_tanks module = empty}
-			}
-		}
-		allowed_modules = {
-			nav_bomber_weapon
-			plane_engine_type
-			plane_jet_engine_type
-
-			drop_tanks
-			armor_plate_small
-			self_sealing_fuel_tanks_small
-		}
-	}
-
-	naval_bomber_2_old_engine = {
-		priority = {
-			factor = 200
-			modifier = { 
-				has_tech = advanced_small_airframe 
-				factor = 0 #let's not waste XP here
-			}
-		}
-		target_variant = {
-			match_value = 140
-			type = small_plane_naval_bomber_airframe_2
-			modules = {
-				fixed_main_weapon_slot = torpedo_mounting
-				fixed_auxiliary_weapon_slot_1 = empty
-				fixed_auxiliary_weapon_slot_2 = empty
 				engine_type_slot = engine_2_1x
-				special_type_slot_1 = lmg_defense_turret
-				special_type_slot_2 = { module = drop_tanks module = empty}	
-				special_type_slot_3 = empty		
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty	
 			}
 		}
 		allowed_modules = {
-			nav_bomber_weapon
-			plane_engine_type
-			plane_jet_engine_type
-
-			drop_tanks
-			armor_plate_small
-			self_sealing_fuel_tanks_small
+			torpedo_mounting
+			engine_2_1x
 		}
 	}
-
 	naval_bomber_2 = {
 		priority = {
 			factor = 200
@@ -628,60 +468,24 @@ generic_naval_bomber = {
 			}
 		}
 		target_variant = {
-			match_value = 150
+			match_value = 1500
 			type = small_plane_naval_bomber_airframe_2
 			modules = {
-				fixed_main_weapon_slot = { module = torpedo_mounting_1 module = torpedo_mounting}
-				fixed_auxiliary_weapon_slot_1 = empty
+				fixed_main_weapon_slot = torpedo_mounting
+				fixed_auxiliary_weapon_slot_1 = bomb_locks
 				fixed_auxiliary_weapon_slot_2 = empty
-				engine_type_slot > engine_2_1x
-				special_type_slot_1 = { module = hmg_defense_turret module = lmg_defense_turret module = empty }
-				special_type_slot_2 = { module = drop_tanks module = empty}	
-				special_type_slot_3 = { module = armor_plate_small module = empty }
+				engine_type_slot = engine_2_2x
+				special_type_slot_1 = lmg_defense_turret
+				special_type_slot_2 = dive_brakes_small	
+				special_type_slot_3 = empty	
 			}
 		}
 		allowed_modules = {
-			nav_bomber_weapon
-			plane_engine_type
-			plane_jet_engine_type
-
-			drop_tanks
-			armor_plate_small
-			self_sealing_fuel_tanks_small
-		}
-	}
-
-	naval_bomber_3_old_engine = {
-		priority = {
-			factor = 200
-			modifier = { 
-				has_tech = modern_small_airframe 
-				factor = 0 #let's not waste XP here
-			}
-		}
-		target_variant = {
-			match_value = 190
-			type = small_plane_naval_bomber_airframe_3
-			modules = {
-				fixed_main_weapon_slot = { module = torpedo_mounting_1 module = torpedo_mounting}
-				fixed_auxiliary_weapon_slot_1 = empty
-				fixed_auxiliary_weapon_slot_2 = empty
-				fixed_auxiliary_weapon_slot_3 = empty
-				engine_type_slot = engine_3_1x
-				special_type_slot_1 = { module = hmg_defense_turret module = lmg_defense_turret module = empty }
-				special_type_slot_2 = { module = drop_tanks module = empty}	
-				special_type_slot_3 = { module = armor_plate_small module = empty}
-			}
-		}
-
-		allowed_modules = {
-			nav_bomber_weapon
-			plane_engine_type
-			plane_jet_engine_type
-
-			drop_tanks
-			armor_plate_small
-			self_sealing_fuel_tanks_small
+			torpedo_mounting
+			lmg_defense_turret
+			bomb_locks
+			engine_2_2x
+			dive_brakes_small
 		}
 	}
 
@@ -694,94 +498,59 @@ generic_naval_bomber = {
 			}
 		}
 		target_variant = {
-			match_value = 200
+			match_value = 2000
 			type = small_plane_naval_bomber_airframe_3
 			modules = {
-				fixed_main_weapon_slot = {
-					module = torpedo_mounting_2
-					module = torpedo_mounting_1
-					module = torpedo_mounting
-				}
-				fixed_auxiliary_weapon_slot_1 = empty
-				fixed_auxiliary_weapon_slot_2 = empty
-				fixed_auxiliary_weapon_slot_3 = empty
-				engine_type_slot = engine_4_1x
-				special_type_slot_1 = { module = hmg_defense_turret module = lmg_defense_turret module = empty }
-				special_type_slot_2 = { module = drop_tanks module = empty}	
-				special_type_slot_3 = { module = armor_plate_small module = empty}
-			}
-		}
-
-		allowed_modules = {
-			nav_bomber_weapon
-			plane_engine_type
-			plane_jet_engine_type
-
-			drop_tanks
-			armor_plate_small
-			self_sealing_fuel_tanks_small
-		}
-	}
-
-	naval_bomber_4_old_engine = {
-		priority = {
-			factor = 200
-		}
-		target_variant = {
-			match_value = 240
-			type = small_plane_naval_bomber_airframe_4
-			modules = {
 				fixed_main_weapon_slot = torpedo_mounting
-				fixed_auxiliary_weapon_slot_1 = empty
+				fixed_auxiliary_weapon_slot_1 = bomb_locks
 				fixed_auxiliary_weapon_slot_2 = empty
 				fixed_auxiliary_weapon_slot_3 = empty
 				engine_type_slot = engine_3_1x
-				special_type_slot_1 = { module = drop_tanks module = empty}
-				special_type_slot_2 = { module = hmg_defense_turret module = lmg_defense_turret module = empty }
-				special_type_slot_3 = { module = armor_plate_small module = empty}
+				special_type_slot_1 = lmg_defense_turret
+				special_type_slot_2 = dive_brakes_small	
+				special_type_slot_3 = empty	
+
 			}
 
 		}
 
 		allowed_modules = {
-			nav_bomber_weapon
-			plane_engine_type
-			plane_jet_engine_type
-
-			drop_tanks
-			armor_plate_small
-			self_sealing_fuel_tanks_small
+			torpedo_mounting
+			bomb_locks
+			engine_3_1x
+			lmg_defense_turret
+			dive_brakes_small
 		}
 	}
-
 	naval_bomber_4 = {
 		priority = {
 			factor = 200
 		}
 		target_variant = {
-			match_value = 250
+			match_value = 2500
 			type = small_plane_naval_bomber_airframe_4
 			modules = {
-				fixed_main_weapon_slot = { module = torpedo_mounting_2 module = torpedo_mounting_1 module = torpedo_mounting }
-				fixed_auxiliary_weapon_slot_1 = empty
+				fixed_main_weapon_slot = torpedo_mounting
+				fixed_auxiliary_weapon_slot_1 = bomb_locks
 				fixed_auxiliary_weapon_slot_2 = empty
 				fixed_auxiliary_weapon_slot_3 = empty
-				engine_type_slot = engine_4_1x
-				special_type_slot_1 = { module = drop_tanks module = empty}
-				special_type_slot_2 = { module = hmg_defense_turret module = lmg_defense_turret module = empty }
-				special_type_slot_3 = { module = armor_plate_small module = empty}
+				engine_type_slot = jet_engine_1x
+				special_type_slot_1 = hmg_defense_turret
+				special_type_slot_2 = dive_brakes_small	
+				special_type_slot_3 = empty	
 			}
 
 		}
 
 		allowed_modules = {
-			nav_bomber_weapon
-			plane_engine_type
-			plane_jet_engine_type
-
-			drop_tanks
-			armor_plate_small
-			self_sealing_fuel_tanks_small
+			torpedo_mounting
+			bomb_locks
+			engine_3_1x
+			jet_engine_1x
+			jet_engine_1x_2
+			jet_engine_1x_3
+			hmg_defense_turret
+			dive_brakes_small
 		}
 	}
 }
@@ -829,7 +598,7 @@ generic_cv_fighter = {
 		}
 
 		target_variant = {
-			match_value = 100
+			match_value = 1000
 			type = cv_small_plane_airframe_0
 			modules = {
 				fixed_main_weapon_slot = light_mg_4x
@@ -856,7 +625,7 @@ generic_cv_fighter = {
 		}
 
 		target_variant = {
-			match_value = 200
+			match_value = 2000
 			type = cv_small_plane_airframe_1
 			modules = {
 				fixed_main_weapon_slot = light_mg_4x
@@ -885,7 +654,7 @@ generic_cv_fighter = {
 		}
 
 		target_variant = {
-			match_value = 300
+			match_value = 3000
 			type = cv_small_plane_airframe_2
 			modules = {
 				fixed_main_weapon_slot = light_mg_4x
@@ -915,7 +684,7 @@ generic_cv_fighter = {
 		}
 
 		target_variant = {
-			match_value = 400
+			match_value = 4000
 			type = cv_small_plane_airframe_3
 			modules = {
 				fixed_main_weapon_slot = aircraft_cannon_1_2x
@@ -946,7 +715,7 @@ generic_cv_fighter = {
 		}
 
 		target_variant = {
-			match_value = 500
+			match_value = 5000
 			type = cv_small_plane_airframe_4
 			modules = {
 				fixed_main_weapon_slot = aircraft_cannon_2_2x
@@ -974,7 +743,7 @@ generic_cv_fighter = {
 		}
 
 		target_variant = {
-			match_value = 600
+			match_value = 6000
 			type = cv_small_plane_airframe_4 #5
 			modules = {
 				fixed_main_weapon_slot = aircraft_cannon_2_2x
@@ -1040,7 +809,7 @@ generic_cv_cas = {
 		}
 
 		target_variant = {
-			match_value = 100
+			match_value = 1000
 			type = cv_small_plane_cas_airframe_1
 			modules = {
 				fixed_main_weapon_slot = bomb_locks
@@ -1068,7 +837,7 @@ generic_cv_cas = {
 		}
 
 		target_variant = {
-			match_value = 150
+			match_value = 1500
 			type = cv_small_plane_cas_airframe_2
 			modules = {
 				fixed_main_weapon_slot = small_bomb_bay
@@ -1098,7 +867,7 @@ generic_cv_cas = {
 		}
 
 		target_variant = {
-			match_value = 250
+			match_value = 2500
 			type = cv_small_plane_cas_airframe_3
 			modules = {
 				fixed_main_weapon_slot = bomb_locks
@@ -1129,7 +898,7 @@ generic_cv_cas = {
 		}
 
 		target_variant = {
-			match_value = 300
+			match_value = 3000
 			type = cv_small_plane_cas_airframe_4
 			modules = {
 				fixed_main_weapon_slot = bomb_locks
@@ -1197,7 +966,7 @@ generic_cv_naval_bomber = {
 		}
 
 		target_variant = {
-			match_value = 100
+			match_value = 1000
 			type = cv_small_plane_naval_bomber_airframe_1
 			modules = {
 				fixed_main_weapon_slot = torpedo_mounting
@@ -1223,7 +992,7 @@ generic_cv_naval_bomber = {
 		}
 
 		target_variant = {
-			match_value = 150
+			match_value = 1500
 			type = cv_small_plane_naval_bomber_airframe_2
 			modules = {
 				fixed_main_weapon_slot = torpedo_mounting
@@ -1256,7 +1025,7 @@ generic_cv_naval_bomber = {
 		}
 
 		target_variant = {
-			match_value = 200
+			match_value = 2000
 			type = cv_small_plane_naval_bomber_airframe_3
 			modules = {
 				fixed_main_weapon_slot = torpedo_mounting
@@ -1287,7 +1056,7 @@ generic_cv_naval_bomber = {
 		}
 
 		target_variant = {
-			match_value = 250
+			match_value = 2500
 			type = cv_small_plane_naval_bomber_airframe_4
 			modules = {
 				fixed_main_weapon_slot = torpedo_mounting
@@ -1350,7 +1119,7 @@ generic_tactical_bomber = {
 		}
 
 		target_variant = {
-			match_value = 200
+			match_value = 2000
 			type = medium_plane_airframe_0
 			modules = {
 				fixed_main_weapon_slot = medium_bomb_bay
@@ -1382,7 +1151,7 @@ generic_tactical_bomber = {
 		}
 
 		target_variant = {
-			match_value = 300
+			match_value = 3000
 			type = medium_plane_airframe_1
 			modules = {
 				fixed_main_weapon_slot = medium_bomb_bay
@@ -1414,7 +1183,7 @@ generic_tactical_bomber = {
 		}
 
 		target_variant = {
-			match_value = 400
+			match_value = 4000
 			type = medium_plane_airframe_2
 			modules = {
 				fixed_main_weapon_slot = medium_bomb_bay
@@ -1449,7 +1218,7 @@ generic_tactical_bomber = {
 		}
 
 		target_variant = {
-			match_value = 500
+			match_value = 5000
 			type = medium_plane_airframe_3
 			modules = {
 				fixed_main_weapon_slot = medium_bomb_bay
@@ -1486,7 +1255,7 @@ generic_tactical_bomber = {
 		}
 
 		target_variant = {
-			match_value = 600
+			match_value = 6000
 			type = medium_plane_airframe_4
 			modules = {
 				fixed_main_weapon_slot = medium_bomb_bay
@@ -1519,7 +1288,7 @@ generic_tactical_bomber = {
 		}
 
 		target_variant = {
-			match_value = 700
+			match_value = 7000
 			type = medium_plane_airframe_4 #5
 			modules = {
 				fixed_main_weapon_slot = medium_bomb_bay
@@ -1576,7 +1345,7 @@ generic_heavy_fighter = {
 		
 
 		target_variant = {
-			match_value = 100
+			match_value = 1000
 			type = medium_plane_fighter_airframe_1
 			modules = {
 				fixed_main_weapon_slot = light_mg_4x
@@ -1611,7 +1380,7 @@ generic_heavy_fighter = {
 		
 
 		target_variant = {
-			match_value = 150
+			match_value = 1500
 			type = medium_plane_fighter_airframe_2
 			modules = {
 				fixed_main_weapon_slot = heavy_mg_4x
@@ -1642,7 +1411,7 @@ generic_heavy_fighter = {
 		}
 
 		target_variant = {
-			match_value = 200
+			match_value = 2000
 			type = medium_plane_fighter_airframe_3
 			modules = {
 				fixed_main_weapon_slot = heavy_mg_4x
@@ -1696,7 +1465,7 @@ generic_scout_plane = {
 		}
 
 		target_variant = {
-			match_value = 100
+			match_value = 1000
 			type = medium_plane_scout_plane_airframe_1
 			modules = {
 				fixed_main_weapon_slot = recon_camera
@@ -1729,7 +1498,7 @@ generic_scout_plane = {
 		}
 
 		target_variant = {
-			match_value = 200
+			match_value = 2000
 			type = medium_plane_scout_plane_airframe_2
 			modules = {
 				fixed_main_weapon_slot = recon_camera
@@ -1759,7 +1528,7 @@ generic_scout_plane = {
 		}
 
 		target_variant = {
-			match_value = 400
+			match_value = 4000
 			type = medium_plane_scout_plane_airframe_3
 			modules = {
 				fixed_main_weapon_slot = recon_camera
@@ -1852,7 +1621,7 @@ generic_strategic_bomber = {
 		}
 
 		target_variant = {
-			match_value = 100
+			match_value = 1000
 			type = large_plane_airframe_1
 			modules = {
 				fixed_main_weapon_slot = large_bomb_bay
@@ -1887,7 +1656,7 @@ generic_strategic_bomber = {
 		}
 
 		target_variant = {
-			match_value = 200
+			match_value = 2000
 			type = large_plane_airframe_2
 			modules = {
 				fixed_main_weapon_slot = large_bomb_bay
@@ -1925,7 +1694,7 @@ generic_strategic_bomber = {
 		}
 
 		target_variant = {
-			match_value = 300
+			match_value = 3000
 			type = large_plane_airframe_3
 			modules = {
 				fixed_main_weapon_slot = large_bomb_bay
@@ -1962,7 +1731,7 @@ generic_strategic_bomber = {
 		}
 
 		target_variant = {
-			match_value = 400
+			match_value = 4000
 			type = large_plane_airframe_4
 			modules = {
 				fixed_main_weapon_slot = large_bomb_bay
@@ -1998,7 +1767,7 @@ generic_strategic_bomber = {
 		}
 
 		target_variant = {
-			match_value = 500
+			match_value = 5000
 			type = large_plane_airframe_4 #5
 			modules = {
 				fixed_main_weapon_slot = large_bomb_bay
@@ -2068,7 +1837,7 @@ generic_maritime_patrol = {
 		}
 
 		target_variant = {
-			match_value = 100
+			match_value = 1000
 			type = large_plane_maritime_patrol_plane_airframe_1
 			modules = {
 				fixed_main_weapon_slot = torpedo_mounting
@@ -2105,7 +1874,7 @@ generic_maritime_patrol = {
 		}
 
 		target_variant = {
-			match_value = 200
+			match_value = 2000
 			type = large_plane_maritime_patrol_plane_airframe_2
 			modules = {
 				fixed_main_weapon_slot = torpedo_mounting
@@ -2141,7 +1910,7 @@ generic_maritime_patrol = {
 		}
 
 		target_variant = {
-			match_value = 300
+			match_value = 3000
 			type = large_plane_maritime_patrol_plane_airframe_3
 			modules = {
 				fixed_main_weapon_slot = torpedo_mounting
