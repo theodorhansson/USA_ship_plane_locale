@@ -1,4 +1,4 @@
-R56_fighter = {
+R56_fighter_meta = {
 	category = air
 
 	roles = {
@@ -9,7 +9,8 @@ R56_fighter = {
 		factor = 1000
 	}
 
-	great_war_fighter_default = {
+	########  He 51  ########
+	R56_iw_fighter = {
 		priority = {
 			factor = 500
 			modifier = { 
@@ -22,11 +23,40 @@ R56_fighter = {
 			match_value = 100
 			type = small_plane_airframe_0
 			modules = {
-				fixed_main_weapon_slot = { module = light_mg_4x }
-				fixed_auxiliary_weapon_slot_1 = { module = light_mg_4x }
+				fixed_main_weapon_slot = light_mg_4x
+				fixed_auxiliary_weapon_slot_1 = empty
 				engine_type_slot = { module > engine_1_1x module = engine_1_1x}
 				special_type_slot_1 = { module = armor_plate_small module = empty }
 				special_type_slot_2 = empty 
+			}
+		}
+
+		allowed_modules = {
+			engine_1_1x
+			light_mg_4x
+		}
+	}
+
+
+	########  BF109 E (early)  ########
+	R56_basic_fighter_early = {
+		priority = {
+			factor = 600
+			modifier = { 
+				has_tech = improved_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		target_variant = {
+			match_value = 190
+			type = small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = { module = heavy_mg_2x module = light_mg_2x }
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = { module = armor_plate_small module = empty }
+				special_type_slot_2 = empty
 			}
 		}
 
@@ -40,7 +70,9 @@ R56_fighter = {
 		}
 	}
 
-	basic_fighter_default = {
+
+	#########  BF109 F (mid)  ########
+	R56_basic_fighter_mid = {
 		priority = {
 			factor = 600
 			modifier = { 
@@ -53,9 +85,9 @@ R56_fighter = {
 			match_value = 200
 			type = small_plane_airframe_1
 			modules = {
-				fixed_main_weapon_slot = light_mg_4x
-				fixed_auxiliary_weapon_slot_1 = { module = heavy_mg_4x module = light_mg_4x module = light_mg_2x}
-				engine_type_slot > engine_1_1x
+				fixed_main_weapon_slot = { module = aircraft_cannon_1_2x module = heavy_mg_4x module = light_mg_4x }
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				engine_type_slot = engine_2_1x
 				special_type_slot_1 = { module = armor_plate_small module = empty }
 				special_type_slot_2 = { module = drop_tanks module = empty }	
 			}
@@ -71,7 +103,41 @@ R56_fighter = {
 		}
 	}
 
-	improved_fighter_default_old_engine = {
+
+	########  BF109 K (late)  ########
+	R56_basic_fighter_late = {
+		priority = {
+			factor = 600
+			modifier = { 
+				has_tech = improved_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		target_variant = {
+			match_value = 210
+			type = small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = 
+				fixed_auxiliary_weapon_slot_1 = { module = heavy_mg_2x module = light_mg_2x}
+				engine_type_slot = engine_3_1x
+				special_type_slot_1 = { module = armor_plate_small module = empty }
+				special_type_slot_2 = { module = drop_tanks module = empty }	
+			}
+		}
+
+		allowed_modules = {
+			plane_engine_type
+			fighter_weapon
+
+			drop_tanks
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+
+	########  FW 190 A-1 (early)  ########
+	R56_improved_fighter_early = {
 		priority = {
 			factor = 600
 			modifier = { 
@@ -84,11 +150,11 @@ R56_fighter = {
 			match_value = 290
 			type = small_plane_airframe_2
 			modules = {
-				fixed_main_weapon_slot = light_mg_4x
+				fixed_main_weapon_slot = {module = aircraft_cannon_1_2x module = heavy_mg_4x module = light_mg_4x}
 				fixed_auxiliary_weapon_slot_1 = light_mg_4x
-				fixed_auxiliary_weapon_slot_2 = light_mg_4x
+				fixed_auxiliary_weapon_slot_2 = empty
 				engine_type_slot = engine_2_1x
-				special_type_slot_1 = { module = armor_plate_small module = drop_tanks module = empty }
+				special_type_slot_1 = { module = armor_plate_small module = empty }
 				special_type_slot_2 = empty	
 				special_type_slot_3 = empty	
 			}
@@ -104,7 +170,9 @@ R56_fighter = {
 		}
 	}
 
-	improved_fighter_default = {
+
+	########  FW 190 A-4 (mid)  ########
+	R56_improved_fighter_mid = {
 		priority = {
 			factor = 600
 			modifier = { 
@@ -117,12 +185,12 @@ R56_fighter = {
 			match_value = 300
 			type = small_plane_airframe_2
 			modules = {
-				fixed_main_weapon_slot = {module = heavy_mg_4x module = light_mg_4x}
-				fixed_auxiliary_weapon_slot_1 = { module = heavy_mg_4x module = light_mg_4x }
-				fixed_auxiliary_weapon_slot_2 = light_mg_4x
-				engine_type_slot > engine_2_1x
+				fixed_main_weapon_slot = {module = aircraft_cannon_1_2x module = heavy_mg_4x module = light_mg_4x}
+				fixed_auxiliary_weapon_slot_1 = { module = aircraft_cannon_1_2x module = heavy_mg_4x module = light_mg_4x }
+				fixed_auxiliary_weapon_slot_2 = light_mg_2x
+				engine_type_slot = engine_3_1x
 				special_type_slot_1 = { module = armor_plate_small module = empty }
-				special_type_slot_2 = { module = drop_tanks module = empty }
+				special_type_slot_2 = { module = drop_tanks module = empty }	
 				special_type_slot_3 = empty	
 			}
 		}
@@ -137,7 +205,60 @@ R56_fighter = {
 		}
 	}
 
-	advanced_fighter_default_old_engine = {
+
+	########  FW 190 D-12 (late)  ########
+	R56_improved_fighter_late = {
+		priority = {
+			factor = 600
+			modifier = { 
+				has_tech = advanced_small_airframe 
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		target_variant = {
+			match_value = 300
+			type = small_plane_airframe_2
+			modules = {
+				fixed_main_weapon_slot = { 
+					module = aircraft_cannon_2_1x
+					module = large_aircraft_cannon_1x
+					module = aircraft_cannon_1_1x
+					module = heavy_mg_4x
+					module = light_mg_4x
+				}
+				fixed_auxiliary_weapon_slot_1 = {
+					module = aircraft_cannon_2_2x
+					module = aircraft_cannon_1_2x
+					module = heavy_mg_4x
+					module = light_mg_4x
+				}
+				fixed_auxiliary_weapon_slot_2 = {
+					module = aircraft_cannon_2_2x
+					module = aircraft_cannon_1_2x
+					module = heavy_mg_4x
+					module = light_mg_4x
+				}
+				engine_type_slot = engine_4_1x
+				special_type_slot_1 = { module = armor_plate_small module = empty }
+				special_type_slot_2 = { module = drop_tanks module = empty }	
+				special_type_slot_3 = empty	
+			}
+		}
+
+		allowed_modules = {
+			plane_engine_type
+			fighter_weapon
+
+			drop_tanks
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+
+
+	########  Ta 152 (early)  ########
+	R56_advanced_fighter_early = {
 		priority = {
 			factor = 600
 			modifier = { 
@@ -150,8 +271,16 @@ R56_fighter = {
 			match_value = 390
 			type = small_plane_airframe_3
 			modules = {
-				fixed_main_weapon_slot = { module = heavy_mg_4x module = light_mg_4x }
-				fixed_auxiliary_weapon_slot_1 = light_mg_4x
+				fixed_main_weapon_slot = { 
+					module = aircraft_cannon_2_2x
+					module = aircraft_cannon_1_2x
+					module = heavy_mg_4x
+					module = light_mg_4x
+				}
+				fixed_auxiliary_weapon_slot_1 = {
+					module = heavy_mg_4x
+					module = light_mg_4x
+				}
 				fixed_auxiliary_weapon_slot_2 = light_mg_4x
 				fixed_auxiliary_weapon_slot_3 = empty
 				engine_type_slot = engine_3_1x
@@ -171,7 +300,8 @@ R56_fighter = {
 		}
 	}
 
-	advanced_fighter_default = {
+	########  Ta 152 C-3 (mid)  ########
+	R56_advanced_fighter_mid = {
 		priority = {
 			factor = 600
 			modifier = { 
@@ -184,9 +314,25 @@ R56_fighter = {
 			match_value = 400
 			type = small_plane_airframe_3
 			modules = {
-				fixed_main_weapon_slot = { module = aircraft_cannon_1_2x module = heavy_mg_4x module = light_mg_4x }
-				fixed_auxiliary_weapon_slot_1 = { module = heavy_mg_4x module = light_mg_4x }
-				fixed_auxiliary_weapon_slot_2 = { module = heavy_mg_4x module = light_mg_4x }
+				fixed_main_weapon_slot = { 
+					module = aircraft_cannon_2_1x
+					module = large_aircraft_cannon_1x
+					module = aircraft_cannon_1_2x
+					module = heavy_mg_2x
+					module = light_mg_2x
+				}
+				fixed_auxiliary_weapon_slot_1 = {
+					module = aircraft_cannon_2_2x
+					module = aircraft_cannon_1_2x
+					module = heavy_mg_4x
+					module = light_mg_4x
+				}
+				fixed_auxiliary_weapon_slot_1 = {
+					module = aircraft_cannon_2_2x
+					module = aircraft_cannon_1_2x
+					module = heavy_mg_4x
+					module = light_mg_4x
+				}
 				fixed_auxiliary_weapon_slot_3 = empty
 				engine_type_slot = engine_4_1x
 				special_type_slot_1 = { module = armor_plate_small module = empty }
@@ -205,38 +351,182 @@ R56_fighter = {
 		}
 	}
 
-	jet_fighter_default_prop = {
+	########  Me 262 (late, prop airframe)  ########
+	R56_advanced_fighter_late = {
+		priority = {
+			factor = 600
+			modifier = { 
+				has_tech = modern_small_airframe 
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		target_variant = {
+			match_value = 400
+			type = small_plane_airframe_3
+			modules = {
+				fixed_main_weapon_slot = { 
+					module = aircraft_cannon_2_2x
+					module = large_aircraft_cannon_2x
+					module = aircraft_cannon_1_2x
+					module = heavy_mg_2x
+					module = light_mg_2x
+				}
+				fixed_auxiliary_weapon_slot_1 = {
+					module = aircraft_cannon_2_2x
+					module = large_aircraft_cannon_2x
+					module = aircraft_cannon_1_2x
+					module = heavy_mg_4x
+					module = light_mg_4x
+				}
+				fixed_auxiliary_weapon_slot_2 = empty
+				fixed_auxiliary_weapon_slot_3 = empty
+				engine_type_slot = jet_engine_2x
+				special_type_slot_1 = { module = armor_plate_small module = empty }
+				special_type_slot_2 = { module = drop_tanks module = empty }
+				special_type_slot_3 = empty	
+			}
+		}
+
+		allowed_modules = {
+			plane_engine_type
+			fighter_weapon
+
+			drop_tanks
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+
+
+	########  Me 262 D (early, jet airframe)  ########
+	R_56_jet_fighter_early = {
 		priority = {
 			factor = 10
-			#modifier = { 
-			#	has_tech = modern_small_airframe_2
-			#	factor = 0 #let's not waste XP here
-			#}
+			modifier = { 
+				has_tech = semi_modern_rocket_engines
+				factor = 0 #let's not waste XP here
+			}
 		}
 
 		target_variant = {
 			match_value = 380
 			type = small_plane_airframe_4
 			modules = {
-				fixed_main_weapon_slot = {
+				fixed_main_weapon_slot = { 
 					module = aircraft_cannon_2_2x
+					module = large_aircraft_cannon_2x
 					module = aircraft_cannon_1_2x
-					module = heavy_mg_4x
-					module = light_mg_4x
+					module = heavy_mg_2x
+					module = light_mg_2x
 				}
 				fixed_auxiliary_weapon_slot_1 = {
 					module = aircraft_cannon_2_2x
+					module = large_aircraft_cannon_2x
 					module = aircraft_cannon_1_2x
 					module = heavy_mg_4x
 					module = light_mg_4x
 				}
-				fixed_auxiliary_weapon_slot_2 = light_mg_2x
+				fixed_auxiliary_weapon_slot_2 = empty
 				fixed_auxiliary_weapon_slot_3 = empty
-				engine_type_slot = engine_4_1x
-				special_type_slot_1 = armor_plate_small
-				special_type_slot_2 = drop_tanks	
-				special_type_slot_3 = empty
-				
+				engine_type_slot = jet_engine_2x
+				special_type_slot_1 = { module = armor_plate_small module = empty }
+				special_type_slot_2 = { module = drop_tanks module = empty }
+				special_type_slot_3 = empty	
+			}
+		}
+
+		allowed_modules = {
+			plane_engine_type
+			fighter_weapon
+
+			drop_tanks
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+
+	########  Mig-15  ########
+	R_56_jet_fighter_mid = {
+		priority = {
+			factor = 10
+			modifier = { 
+				has_tech = modern_rocket_engines
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		target_variant = {
+			match_value = 380
+			type = small_plane_airframe_4
+			modules = {
+				fixed_main_weapon_slot = { 
+					module = aircraft_cannon_2_2x
+					module = large_aircraft_cannon_2x
+					module = aircraft_cannon_1_2x
+					module = heavy_mg_2x
+					module = light_mg_2x
+				}
+				fixed_auxiliary_weapon_slot_1 = {
+					module = aircraft_cannon_2_2x
+					module = large_aircraft_cannon_2x
+					module = aircraft_cannon_1_2x
+					module = heavy_mg_4x
+					module = light_mg_4x
+				}
+				fixed_auxiliary_weapon_slot_2 = empty
+				fixed_auxiliary_weapon_slot_3 = empty
+				engine_type_slot = jet_engine_1x_2
+				special_type_slot_1 = { module = armor_plate_small module = empty }
+				special_type_slot_2 = { module = drop_tanks module = empty }
+				special_type_slot_3 = empty	
+			}
+		}
+
+		allowed_modules = {
+			plane_engine_type
+			fighter_weapon
+
+			drop_tanks
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+
+	########  Mig-19  ########
+	R_56_jet_fighter_late = {
+		priority = {
+			factor = 10
+			modifier = { 
+				has_tech = semi_modern_rocket_engines
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		target_variant = {
+			match_value = 380
+			type = small_plane_airframe_4
+			modules = {
+				fixed_main_weapon_slot = { 
+					module = aircraft_cannon_2_2x
+					module = large_aircraft_cannon_2x
+					module = aircraft_cannon_1_2x
+					module = heavy_mg_2x
+					module = light_mg_2x
+				}
+				fixed_auxiliary_weapon_slot_1 = {
+					module = aircraft_cannon_2_2x
+					module = large_aircraft_cannon_2x
+					module = aircraft_cannon_1_2x
+					module = heavy_mg_4x
+					module = light_mg_4x
+				}
+				fixed_auxiliary_weapon_slot_2 = empty
+				fixed_auxiliary_weapon_slot_3 = empty
+				engine_type_slot = jet_engine_1x_3
+				special_type_slot_1 = { module = armor_plate_small module = empty }
+				special_type_slot_2 = { module = drop_tanks module = empty }
+				special_type_slot_3 = empty	
 			}
 		}
 
