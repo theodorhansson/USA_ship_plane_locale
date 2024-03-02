@@ -1,0 +1,582 @@
+R56_SWE_fighter = {
+	category = air
+
+    available_for = { SWE }
+
+	roles = {
+		air_fighter
+	}
+
+	priority = {
+		factor = 1000
+	}
+
+	########  Svenska Aero J 6 Jaktfalken  ########
+	R56_SWE_iw_fighter = {
+		priority = {
+			factor = 500
+			modifier = { 
+				has_tech = basic_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		target_variant = {
+			match_value = 100
+			type = small_plane_airframe_0
+			modules = {
+				fixed_main_weapon_slot = light_mg_2x
+				fixed_auxiliary_weapon_slot_1 = empty
+				engine_type_slot = { module > engine_1_1x module = engine_1_1x }
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty 
+			}
+		}
+
+		allowed_modules = {
+			plane_engine_type
+			fighter_weapon
+
+			drop_tanks
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+
+
+	########  Seversky J 9 (early)  ########
+	R56_SWE_basic_fighter_early = {
+		priority = {
+			factor = 600
+			modifier = {
+				has_tech = improved_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		enable = { NOT = { has_tech = engines_2 } }
+
+		target_variant = {
+			match_value = 190
+			type = small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = { module = heavy_mg_2x module = light_mg_2x }
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = { module = armor_plate_small module = empty }
+				special_type_slot_2 = empty
+			}
+		}
+
+		allowed_modules = {
+			plane_engine_type
+			fighter_weapon
+
+			drop_tanks
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+
+
+	########  Seversky J 9 (mid)  ########
+	R56_SWE_basic_fighter_mid = {
+		priority = {
+			factor = 600
+			modifier = { 
+				has_tech = improved_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		enable = {
+			AND = {
+				has_tech = engines_2
+				NOT = { has_tech = engines_3 }
+			}
+		}
+
+		target_variant = {
+			match_value = 200
+			type = small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = { module = heavy_mg_2x module = light_mg_2x }
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = { module = armor_plate_small module = empty }
+				special_type_slot_2 = { module = drop_tanks module = empty }	
+			}
+		}
+
+		allowed_modules = {
+			plane_engine_type
+			fighter_weapon
+
+			drop_tanks
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+
+	
+	########  Seversky J 9 (late)  ########
+	R56_SWE_basic_fighter_late = {
+		priority = {
+			factor = 600
+			modifier = { 
+				has_tech = improved_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		enable = { has_tech = engines_3 }
+
+		target_variant = {
+			match_value = 210
+			type = small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = {
+					module = aircraft_cannon_2_2x
+					module = aircraft_cannon_1_2x
+					module = heavy_mg_4x
+					module = light_mg_4x
+				}
+				fixed_auxiliary_weapon_slot_1 = { module = heavy_mg_2x module = light_mg_2x }
+				engine_type_slot = engine_3_1x
+				special_type_slot_1 = { module = armor_plate_small module = empty }
+				special_type_slot_2 = { module = drop_tanks module = empty }	
+			}
+		}
+
+		allowed_modules = {
+			plane_engine_type
+			fighter_weapon
+
+			drop_tanks
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+
+
+	########  FFVS J 22A (early)  ########
+	R56_SWE_improved_fighter_early = {
+		priority = {
+			factor = 600
+			modifier = { 
+				has_tech = advanced_small_airframe 
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		enable = { NOT = { has_tech = engines_3 } }
+
+		target_variant = {
+			match_value = 290
+			type = small_plane_airframe_2
+			modules = {
+				fixed_main_weapon_slot = {module = heavy_mg_2x module = light_mg_2x }
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				fixed_auxiliary_weapon_slot_2 = empty
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = { module = armor_plate_small module = empty }
+				special_type_slot_2 = empty	
+				special_type_slot_3 = empty	
+			}
+		}
+
+		allowed_modules = {
+			plane_engine_type
+			fighter_weapon
+
+			drop_tanks
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+
+
+	########  FFVS J 22 (mid)  ########
+	R56_SWE_improved_fighter_mid = {
+		priority = {
+			factor = 600
+			modifier = { 
+				has_tech = advanced_small_airframe 
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		enable = {
+			AND = {
+				has_tech = engines_3
+				NOT = { has_tech = engines_4 }
+			}
+		}
+
+		target_variant = {
+			match_value = 300
+			type = small_plane_airframe_2
+			modules = {
+				fixed_main_weapon_slot = { module = heavy_mg_2x module = light_mg_2x }
+				fixed_auxiliary_weapon_slot_1 = { module = heavy_mg_2x module = light_mg_2x }
+				fixed_auxiliary_weapon_slot_2 = empty
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = { module = armor_plate_small module = empty }
+				special_type_slot_2 = empty	
+				special_type_slot_3 = empty	
+			}
+		}
+
+		allowed_modules = {
+			plane_engine_type
+			fighter_weapon
+
+			drop_tanks
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+
+
+	########  FFVS J 22 (late)  ########
+	R56_SWE_improved_fighter_late = {
+		priority = {
+			factor = 600
+			modifier = { 
+				has_tech = advanced_small_airframe 
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		enable = { has_tech = engines_4 }
+
+		target_variant = {
+			match_value = 300
+			type = small_plane_airframe_2
+			modules = {
+				fixed_main_weapon_slot = { module = heavy_mg_2x module = light_mg_2x }
+				fixed_auxiliary_weapon_slot_1 = { module = heavy_mg_2x module = light_mg_2x }
+				fixed_auxiliary_weapon_slot_2 = empty
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = { module = armor_plate_small module = empty }
+				special_type_slot_2 = empty	
+				special_type_slot_3 = empty	
+			}
+		}
+
+		allowed_modules = {
+			plane_engine_type
+			fighter_weapon
+
+			drop_tanks
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+
+
+	########  SAAB J 21 A-1 (early)  ########
+	R56_SWE_advanced_fighter_early = {
+		priority = {
+			factor = 600
+			modifier = { 
+				has_tech = modern_small_airframe 
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		enable = { NOT = { has_tech = engines_4 } }
+
+		target_variant = {
+			match_value = 390
+			type = small_plane_airframe_3
+			modules = {
+				fixed_main_weapon_slot = { 
+					module = aircraft_cannon_2_1x
+					module = aircraft_cannon_1_1x
+					module = heavy_mg_4x
+					module = light_mg_4x
+				}
+				fixed_auxiliary_weapon_slot_1 = {
+					module = heavy_mg_2x
+					module = light_mg_2x
+				}
+				fixed_auxiliary_weapon_slot_2 = {
+					module = heavy_mg_2x
+					module = light_mg_2x
+				}
+				fixed_auxiliary_weapon_slot_3 = empty
+				engine_type_slot = jet_engine_1x
+				special_type_slot_1 = { module = armor_plate_small module = empty }
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty	
+			}
+		}
+
+		allowed_modules = {
+			plane_engine_type
+			fighter_weapon
+
+			drop_tanks
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+
+
+	########  SAAB J 21 A-2 (mid)  ########
+	R56_SWE_advanced_fighter_mid = {
+		priority = {
+			factor = 600
+			modifier = { 
+				has_tech = modern_small_airframe 
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		enable = {
+			AND = {
+				has_tech = engines_4
+				NOT = { has_tech = semi_modern_rocket_engines}
+			}
+		}
+
+		target_variant = {
+			match_value = 400
+			type = small_plane_airframe_3
+			modules = {
+				fixed_main_weapon_slot = { 
+					module = aircraft_cannon_2_1x
+					module = aircraft_cannon_1_1x
+					module = heavy_mg_4x
+					module = light_mg_4x
+				}
+				fixed_auxiliary_weapon_slot_1 = {
+					module = heavy_mg_2x
+					module = light_mg_2x
+				}
+				fixed_auxiliary_weapon_slot_2 = {
+					module = heavy_mg_2x
+					module = light_mg_2x
+				}
+				fixed_auxiliary_weapon_slot_3 = empty
+				engine_type_slot = jet_engine_1x
+				special_type_slot_1 = { module = armor_plate_small module = empty }
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty	
+			}
+		}
+
+		allowed_modules = {
+			plane_engine_type
+			fighter_weapon
+
+			drop_tanks
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+
+
+	########  SAAB J 21R A (early, jet airframe)  ########
+	R56_SWE_advanced_fighter_late = {
+		priority = {
+			factor = 600
+			modifier = { 
+				has_tech = modern_small_airframe 
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		enable = { has_tech = jet_engines }
+
+		target_variant = {
+			match_value = 400
+			type = small_plane_airframe_3
+			modules = {
+				fixed_main_weapon_slot = { 
+					module = aircraft_cannon_2_1x
+					module = aircraft_cannon_1_1x
+					module = heavy_mg_4x
+					module = light_mg_4x
+				}
+				fixed_auxiliary_weapon_slot_1 = {
+					module = heavy_mg_2x
+					module = light_mg_2x
+				}
+				fixed_auxiliary_weapon_slot_2 = {
+					module = heavy_mg_2x
+					module = light_mg_2x
+				}
+				fixed_auxiliary_weapon_slot_3 = empty
+				engine_type_slot = jet_engine_1x
+				special_type_slot_1 = { module = armor_plate_small module = empty }
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty	
+			}
+		}
+
+		allowed_modules = {
+			plane_engine_type
+			fighter_weapon
+
+			drop_tanks
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+
+
+	########  SAAB J 21R A (early, jet airframe)  ########
+	R56_SWE_jet_fighter_early = {
+		priority = {
+			factor = 10
+			modifier = { 
+				has_tech = semi_modern_rocket_engines
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		enable = { NOT = { has_tech = semi_modern_rocket_engines} }
+
+		target_variant = {
+			match_value = 390
+			type = small_plane_airframe_4
+			modules = {
+				fixed_main_weapon_slot = { 
+					module = aircraft_cannon_2_1x
+					module = aircraft_cannon_1_1x
+					module = heavy_mg_4x
+					module = light_mg_4x
+				}
+				fixed_auxiliary_weapon_slot_1 = {
+					module = heavy_mg_2x
+					module = light_mg_2x
+				}
+				fixed_auxiliary_weapon_slot_2 = {
+					module = heavy_mg_2x
+					module = light_mg_2x
+				}
+				fixed_auxiliary_weapon_slot_3 = empty
+				engine_type_slot = jet_engine_1x
+				special_type_slot_1 = { module = armor_plate_small module = empty }
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty	
+			}
+		}
+
+		allowed_modules = {
+			plane_engine_type
+			fighter_weapon
+
+			drop_tanks
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+
+	########  SAAB J 29A (mid)  ########
+	R56_SWE_jet_fighter_mid = {
+		priority = {
+			factor = 10
+			modifier = { 
+				has_tech = modern_rocket_engines
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		enable = {
+			AND = {
+				has_tech = semi_modern_rocket_engines
+				NOT = { has_tech = modern_rocket_engines }
+			}
+		}
+
+		target_variant = {
+			match_value = 400
+			type = small_plane_airframe_4
+			modules = {
+				fixed_main_weapon_slot = { 
+					module = aircraft_cannon_2_2x
+					module = large_aircraft_cannon_2x
+					module = aircraft_cannon_1_2x
+					module = heavy_mg_2x
+					module = light_mg_2x
+				}
+				fixed_auxiliary_weapon_slot_1 = {
+					module = aircraft_cannon_2_2x
+					module = large_aircraft_cannon_2x
+					module = aircraft_cannon_1_2x
+					module = heavy_mg_4x
+					module = light_mg_4x
+				}
+				fixed_auxiliary_weapon_slot_2 = empty
+				fixed_auxiliary_weapon_slot_3 = empty
+				engine_type_slot = jet_engine_1x_2
+				special_type_slot_1 = { module = armor_plate_small module = empty }
+				special_type_slot_2 = { module = drop_tanks module = empty }
+				special_type_slot_3 = { module = fuel_tanks_small module = empty }
+				special_type_slot_4 = { module = armor_plate_small module = empty }
+			}
+		}
+
+		allowed_modules = {
+			plane_engine_type
+			fighter_weapon
+
+			drop_tanks
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+
+	########  SAAB J 29F (late)  ########
+	R56_SWE_jet_fighter_late = {
+		priority = {
+			factor = 10
+			modifier = { 
+				has_tech = semi_modern_rocket_engines
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		enable = { has_tech = modern_rocket_engines }
+
+		target_variant = {
+			match_value = 410
+			type = small_plane_airframe_4
+			modules = {
+				fixed_main_weapon_slot = { 
+					module = aircraft_cannon_2_2x
+					module = large_aircraft_cannon_2x
+					module = aircraft_cannon_1_2x
+					module = heavy_mg_2x
+					module = light_mg_2x
+				}
+				fixed_auxiliary_weapon_slot_1 = {
+					module = aircraft_cannon_2_2x
+					module = large_aircraft_cannon_2x
+					module = aircraft_cannon_1_2x
+					module = heavy_mg_4x
+					module = light_mg_4x
+				}
+				fixed_auxiliary_weapon_slot_2 = { module = guided_AA_rocket_rails module = AA_rocket_rails module = empty}
+				fixed_auxiliary_weapon_slot_3 = empty
+				engine_type_slot = jet_engine_1x_3
+				special_type_slot_1 = { module = armor_plate_small module = empty }
+				special_type_slot_2 = { module = drop_tanks module = empty }
+				special_type_slot_3 = { module = fuel_tanks_small module = empty }
+				special_type_slot_4 = { module = armor_plate_small module = empty }
+			}
+		}
+
+		allowed_modules = {
+			plane_engine_type
+			fighter_weapon
+
+			drop_tanks
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+}

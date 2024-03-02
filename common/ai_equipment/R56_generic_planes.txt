@@ -1,6 +1,8 @@
 R56_generic_fighter = {
 	category = air
 
+	blocked_for = { SWE }
+
 	roles = {
 		air_fighter
 	}
@@ -445,7 +447,7 @@ R56_generic_fighter = {
 
 
 	########  Me 262 D (early, jet airframe)  ########
-	R_56_jet_fighter_early = {
+	R_56_generic_jet_fighter_early = {
 		priority = {
 			factor = 10
 			modifier = { 
@@ -494,7 +496,7 @@ R56_generic_fighter = {
 	}
 
 	########  Mig-15  ########
-	R_56_jet_fighter_mid = {
+	R_56_generic_jet_fighter_mid = {
 		priority = {
 			factor = 10
 			modifier = { 
@@ -549,7 +551,7 @@ R56_generic_fighter = {
 	}
 
 	########  Mig-19  ########
-	R_56_jet_fighter_late = {
+	R_56_generic_jet_fighter_late = {
 		priority = {
 			factor = 10
 			modifier = { 
