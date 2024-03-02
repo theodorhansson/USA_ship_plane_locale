@@ -175,7 +175,7 @@ R56_SWE_fighter = {
 			match_value = 290
 			type = small_plane_airframe_2
 			modules = {
-				fixed_main_weapon_slot = {module = heavy_mg_2x module = light_mg_2x }
+				fixed_main_weapon_slot = { module = heavy_mg_2x module = light_mg_2x }
 				fixed_auxiliary_weapon_slot_1 = light_mg_2x
 				fixed_auxiliary_weapon_slot_2 = empty
 				engine_type_slot = engine_2_1x
@@ -306,7 +306,7 @@ R56_SWE_fighter = {
 					module = light_mg_2x
 				}
 				fixed_auxiliary_weapon_slot_3 = empty
-				engine_type_slot = jet_engine_1x
+				engine_type_slot = engine_3_1x
 				special_type_slot_1 = { module = armor_plate_small module = empty }
 				special_type_slot_2 = empty
 				special_type_slot_3 = empty	
@@ -360,7 +360,7 @@ R56_SWE_fighter = {
 					module = light_mg_2x
 				}
 				fixed_auxiliary_weapon_slot_3 = empty
-				engine_type_slot = jet_engine_1x
+				engine_type_slot = engine_4_1x
 				special_type_slot_1 = { module = armor_plate_small module = empty }
 				special_type_slot_2 = empty
 				special_type_slot_3 = empty	
@@ -378,7 +378,7 @@ R56_SWE_fighter = {
 	}
 
 
-	########  SAAB J 21R A (early, jet airframe)  ########
+	########  SAAB J 21R A (late, prop airframe)  ########
 	R56_SWE_advanced_fighter_late = {
 		priority = {
 			factor = 600
