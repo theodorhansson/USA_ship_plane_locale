@@ -495,7 +495,7 @@ R56_generic_fighter = {
 		}
 	}
 
-	########  Mig-15  ########
+	########  Mig-15 (mid)  ########
 	R_56_generic_jet_fighter_mid = {
 		priority = {
 			factor = 10
@@ -550,7 +550,7 @@ R56_generic_fighter = {
 		}
 	}
 
-	########  Mig-19  ########
+	########  Mig-19 (late)  ########
 	R_56_generic_jet_fighter_late = {
 		priority = {
 			factor = 10
