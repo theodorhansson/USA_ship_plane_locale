@@ -156,6 +156,7 @@ R56_fighter = {
 		}
 	}
 
+
 	########  FW 190 A-1 (early)  ########
 	R56_improved_fighter_early = {
 		priority = {
@@ -333,6 +334,7 @@ R56_fighter = {
 		}
 	}
 
+
 	########  Ta 152 C-3 (mid)  ########
 	R56_advanced_fighter_mid = {
 		priority = {
@@ -367,7 +369,7 @@ R56_fighter = {
 					module = heavy_mg_4x
 					module = light_mg_4x
 				}
-				fixed_auxiliary_weapon_slot_1 = {
+				fixed_auxiliary_weapon_slot_2 = {
 					module = aircraft_cannon_2_2x
 					module = aircraft_cannon_1_2x
 					module = heavy_mg_4x
@@ -390,6 +392,7 @@ R56_fighter = {
 			self_sealing_fuel_tanks_small
 		}
 	}
+
 
 	########  Me 262 (late, prop airframe)  ########
 	R56_advanced_fighter_late = {
