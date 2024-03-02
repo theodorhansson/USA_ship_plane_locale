@@ -12,9 +12,12 @@ R56_generic_fighter = {
 		SAF
 		SCO
 		WLS
-		
+
 		GER
 		SWE
+
+		USA
+		PHI
 	}
 
 	roles = {
@@ -189,7 +192,7 @@ R56_generic_fighter = {
 			match_value = 290
 			type = small_plane_airframe_2
 			modules = {
-				fixed_main_weapon_slot = {module = aircraft_cannon_1_2x module = heavy_mg_4x module = light_mg_4x}
+				fixed_main_weapon_slot = { module = aircraft_cannon_1_2x module = heavy_mg_4x module = light_mg_4x}
 				fixed_auxiliary_weapon_slot_1 = light_mg_4x
 				fixed_auxiliary_weapon_slot_2 = empty
 				engine_type_slot = engine_2_1x
@@ -231,7 +234,7 @@ R56_generic_fighter = {
 			match_value = 300
 			type = small_plane_airframe_2
 			modules = {
-				fixed_main_weapon_slot = {module = aircraft_cannon_1_2x module = heavy_mg_4x module = light_mg_4x}
+				fixed_main_weapon_slot = { module = aircraft_cannon_1_2x module = heavy_mg_4x module = light_mg_4x}
 				fixed_auxiliary_weapon_slot_1 = { module = aircraft_cannon_1_2x module = heavy_mg_4x module = light_mg_4x }
 				fixed_auxiliary_weapon_slot_2 = light_mg_2x
 				engine_type_slot = engine_3_1x
