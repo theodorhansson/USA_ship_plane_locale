@@ -528,12 +528,13 @@ R56_fighter = {
 					module = heavy_mg_4x
 					module = light_mg_4x
 				}
-				fixed_auxiliary_weapon_slot_2 = empty
-				fixed_auxiliary_weapon_slot_3 = empty
+				fixed_auxiliary_weapon_slot_2 = { module = guided_AA_rocket_rails module = AA_rocket_rails module = empty}
+				fixed_auxiliary_weapon_slot_3 = { module = guided_AA_rocket_rails module = AA_rocket_rails module = empty}
 				engine_type_slot = jet_engine_1x_2
 				special_type_slot_1 = { module = armor_plate_small module = empty }
-				special_type_slot_2 = { module = drop_tanks module = empty }
-				special_type_slot_3 = empty	
+				special_type_slot_2 = { module = fuel_tanks_small module = drop_tanks module = empty }
+				special_type_slot_3 = { module = fuel_tanks_small module = empty }
+				special_type_slot_4 = { module = armor_plate_small module = empty }
 			}
 		}
 
@@ -577,12 +578,13 @@ R56_fighter = {
 					module = heavy_mg_4x
 					module = light_mg_4x
 				}
-				fixed_auxiliary_weapon_slot_2 = empty
-				fixed_auxiliary_weapon_slot_3 = empty
-				engine_type_slot = jet_engine_1x_3
+				fixed_auxiliary_weapon_slot_2 = { module = guided_AA_rocket_rails module = AA_rocket_rails module = empty}
+				fixed_auxiliary_weapon_slot_3 = { module = guided_AA_rocket_rails module = AA_rocket_rails module = empty}
+				engine_type_slot = jet_engine_1x_2
 				special_type_slot_1 = { module = armor_plate_small module = empty }
-				special_type_slot_2 = { module = drop_tanks module = empty }
-				special_type_slot_3 = empty	
+				special_type_slot_2 = { module = fuel_tanks_small module = drop_tanks module = empty }
+				special_type_slot_3 = { module = fuel_tanks_small module = empty }
+				special_type_slot_4 = { module = armor_plate_small module = empty }
 			}
 		}
 
