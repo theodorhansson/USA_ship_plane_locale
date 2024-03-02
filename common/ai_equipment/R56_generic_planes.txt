@@ -1,7 +1,19 @@
 R56_generic_fighter = {
 	category = air
 
-	blocked_for = { SWE }
+	blocked_for = {
+		ENG
+		AST
+		CAN
+		MAL
+		NIR
+		NZL
+		RAJ
+		SAF
+		SCO
+		WLS
+		SWE
+	}
 
 	roles = {
 		air_fighter
