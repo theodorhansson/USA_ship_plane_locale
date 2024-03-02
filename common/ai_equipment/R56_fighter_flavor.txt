@@ -4,12 +4,17 @@ R56_ENG_fighter = {
     available_for = {
 		ENG
 		AST
+		BHU
 		CAN
+		EGY
 		MAL
+		MPL
+		NEP
+		NIR
 		NZL
+		OMA
 		RAJ
 		SAF
-		NIR
 		SCO
 		WLS
 	}

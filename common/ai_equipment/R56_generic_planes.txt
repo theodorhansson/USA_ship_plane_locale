@@ -4,10 +4,15 @@ R56_generic_fighter = {
 	blocked_for = {
 		ENG
 		AST
+		BHU
 		CAN
+		EGY
 		MAL
+		MPL
+		NEP
 		NIR
 		NZL
+		OMA
 		RAJ
 		SAF
 		SCO
