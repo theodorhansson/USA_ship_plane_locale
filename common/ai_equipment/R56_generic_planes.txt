@@ -389,7 +389,7 @@ R56_generic_fighter = {
 				fixed_main_weapon_slot = { 
 					module = aircraft_cannon_2_1x
 					module = large_aircraft_cannon_1x
-					module = aircraft_cannon_1_2x
+					module = aircraft_cannon_1_1x
 					module = heavy_mg_2x
 					module = light_mg_2x
 				}

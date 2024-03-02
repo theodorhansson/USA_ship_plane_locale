@@ -45,7 +45,7 @@ R56_ENG_fighter = {
 				fixed_auxiliary_weapon_slot_1 = empty
 				engine_type_slot = { module > engine_1_1x module = engine_1_1x }
 				special_type_slot_1 = empty
-				special_type_slot_2 = empty 
+				special_type_slot_2 = empty
 			}
 		}
 
@@ -622,7 +622,7 @@ R56_GER_fighter = {
 				fixed_auxiliary_weapon_slot_1 = empty
 				engine_type_slot = { module > engine_1_1x module = engine_1_1x}
 				special_type_slot_1 = { module = armor_plate_small module = empty }
-				special_type_slot_2 = empty 
+				special_type_slot_2 = empty
 			}
 		}
 
@@ -954,7 +954,7 @@ R56_GER_fighter = {
 				fixed_main_weapon_slot = { 
 					module = aircraft_cannon_2_1x
 					module = large_aircraft_cannon_1x
-					module = aircraft_cannon_1_2x
+					module = aircraft_cannon_1_1x
 					module = heavy_mg_2x
 					module = light_mg_2x
 				}
@@ -1233,7 +1233,7 @@ R56_SOV_fighter = {
 				fixed_auxiliary_weapon_slot_1 = empty
 				engine_type_slot = { module > engine_1_1x module = engine_1_1x}
 				special_type_slot_1 = empty
-				special_type_slot_2 = empty 
+				special_type_slot_2 = empty
 			}
 		}
 
@@ -1817,7 +1817,7 @@ R56_SWE_fighter = {
 				fixed_auxiliary_weapon_slot_1 = empty
 				engine_type_slot = { module > engine_1_1x module = engine_1_1x }
 				special_type_slot_1 = empty
-				special_type_slot_2 = empty 
+				special_type_slot_2 = empty
 			}
 		}
 
