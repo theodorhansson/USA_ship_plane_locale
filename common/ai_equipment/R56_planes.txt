@@ -1,4 +1,4 @@
-R56_fighter_meta = {
+R56_fighter = {
 	category = air
 
 	roles = {
@@ -42,7 +42,7 @@ R56_fighter_meta = {
 	R56_basic_fighter_early = {
 		priority = {
 			factor = 600
-			modifier = { 
+			modifier = {
 				has_tech = improved_small_airframe
 				factor = 0 #let's not waste XP here
 			}
@@ -71,7 +71,7 @@ R56_fighter_meta = {
 	}
 
 
-	#########  BF109 F (mid)  ########
+	########  BF109 F (mid)  ########
 	R56_basic_fighter_mid = {
 		priority = {
 			factor = 600
@@ -85,7 +85,11 @@ R56_fighter_meta = {
 			match_value = 200
 			type = small_plane_airframe_1
 			modules = {
-				fixed_main_weapon_slot = { module = aircraft_cannon_1_2x module = heavy_mg_4x module = light_mg_4x }
+				fixed_main_weapon_slot = {
+					module = aircraft_cannon_1_2x
+					module = heavy_mg_4x
+					module = light_mg_4x
+				}
 				fixed_auxiliary_weapon_slot_1 = light_mg_2x
 				engine_type_slot = engine_2_1x
 				special_type_slot_1 = { module = armor_plate_small module = empty }
@@ -103,7 +107,7 @@ R56_fighter_meta = {
 		}
 	}
 
-
+	
 	########  BF109 K (late)  ########
 	R56_basic_fighter_late = {
 		priority = {
@@ -118,8 +122,13 @@ R56_fighter_meta = {
 			match_value = 210
 			type = small_plane_airframe_1
 			modules = {
-				fixed_main_weapon_slot = 
-				fixed_auxiliary_weapon_slot_1 = { module = heavy_mg_2x module = light_mg_2x}
+				fixed_main_weapon_slot = {
+					module = aircraft_cannon_2_2x
+					module = aircraft_cannon_1_2x
+					module = heavy_mg_4x
+					module = light_mg_4x
+				}
+				fixed_auxiliary_weapon_slot_1 = { module = heavy_mg_2x module = light_mg_2x }
 				engine_type_slot = engine_3_1x
 				special_type_slot_1 = { module = armor_plate_small module = empty }
 				special_type_slot_2 = { module = drop_tanks module = empty }	
