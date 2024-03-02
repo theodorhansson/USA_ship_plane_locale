@@ -48,6 +48,8 @@ R56_fighter = {
 			}
 		}
 
+		enable = { NOT = { has_tech = engines_2 } }
+
 		target_variant = {
 			match_value = 190
 			type = small_plane_airframe_1
@@ -78,6 +80,13 @@ R56_fighter = {
 			modifier = { 
 				has_tech = improved_small_airframe
 				factor = 0 #let's not waste XP here
+			}
+		}
+
+		enable = {
+			AND = {
+				has_tech = engines_2
+				NOT = { has_tech = engines_3 }
 			}
 		}
 
@@ -118,6 +127,8 @@ R56_fighter = {
 			}
 		}
 
+		enable = { has_tech = engines_3 }
+
 		target_variant = {
 			match_value = 210
 			type = small_plane_airframe_1
@@ -155,6 +166,8 @@ R56_fighter = {
 			}
 		}
 
+		enable = { NOT = { has_tech = engines_3 } }
+
 		target_variant = {
 			match_value = 290
 			type = small_plane_airframe_2
@@ -187,6 +200,13 @@ R56_fighter = {
 			modifier = { 
 				has_tech = advanced_small_airframe 
 				factor = 0 #let's not waste XP here
+			}
+		}
+
+		enable = {
+			AND = {
+				has_tech = engines_3
+				NOT = { has_tech = engines_4 }
 			}
 		}
 
@@ -224,6 +244,8 @@ R56_fighter = {
 				factor = 0 #let's not waste XP here
 			}
 		}
+
+		enable = { has_tech = engines_4 }
 
 		target_variant = {
 			match_value = 300
@@ -276,6 +298,8 @@ R56_fighter = {
 			}
 		}
 
+		enable = { NOT = { has_tech = engines_4 } }
+
 		target_variant = {
 			match_value = 390
 			type = small_plane_airframe_3
@@ -316,6 +340,13 @@ R56_fighter = {
 			modifier = { 
 				has_tech = modern_small_airframe 
 				factor = 0 #let's not waste XP here
+			}
+		}
+
+		enable = {
+			AND = {
+				has_tech = engines_4
+				NOT = { has_tech = semi_modern_rocket_engines}
 			}
 		}
 
@@ -370,6 +401,8 @@ R56_fighter = {
 			}
 		}
 
+		enable = { has_tech = jet_engines }
+
 		target_variant = {
 			match_value = 400
 			type = small_plane_airframe_3
@@ -418,6 +451,8 @@ R56_fighter = {
 			}
 		}
 
+		enable = { NOT = { has_tech = semi_modern_rocket_engines} }
+
 		target_variant = {
 			match_value = 390
 			type = small_plane_airframe_4
@@ -462,6 +497,13 @@ R56_fighter = {
 			modifier = { 
 				has_tech = modern_rocket_engines
 				factor = 0 #let's not waste XP here
+			}
+		}
+
+		enable = {
+			AND = {
+				has_tech = semi_modern_rocket_engines
+				NOT = { has_tech = modern_rocket_engines }
 			}
 		}
 
@@ -511,6 +553,8 @@ R56_fighter = {
 				factor = 0 #let's not waste XP here
 			}
 		}
+
+		enable = { has_tech = modern_rocket_engines }
 
 		target_variant = {
 			match_value = 410
