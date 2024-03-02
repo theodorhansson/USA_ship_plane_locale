@@ -1,4 +1,4 @@
-R56_fighter = {
+R56_generic_fighter = {
 	category = air
 
 	roles = {
@@ -10,7 +10,7 @@ R56_fighter = {
 	}
 
 	########  He 51  ########
-	R56_iw_fighter = {
+	R56_generic_iw_fighter = {
 		priority = {
 			factor = 500
 			modifier = { 
@@ -39,7 +39,7 @@ R56_fighter = {
 
 
 	########  BF109 E (early)  ########
-	R56_basic_fighter_early = {
+	R56_generic_basic_fighter_early = {
 		priority = {
 			factor = 600
 			modifier = {
@@ -74,7 +74,7 @@ R56_fighter = {
 
 
 	########  BF109 F (mid)  ########
-	R56_basic_fighter_mid = {
+	R56_generic_basic_fighter_mid = {
 		priority = {
 			factor = 600
 			modifier = { 
@@ -118,7 +118,7 @@ R56_fighter = {
 
 	
 	########  BF109 K (late)  ########
-	R56_basic_fighter_late = {
+	R56_generic_basic_fighter_late = {
 		priority = {
 			factor = 600
 			modifier = { 
@@ -158,7 +158,7 @@ R56_fighter = {
 
 
 	########  FW 190 A-1 (early)  ########
-	R56_improved_fighter_early = {
+	R56_generic_improved_fighter_early = {
 		priority = {
 			factor = 600
 			modifier = { 
@@ -195,7 +195,7 @@ R56_fighter = {
 
 
 	########  FW 190 A-4 (mid)  ########
-	R56_improved_fighter_mid = {
+	R56_generic_improved_fighter_mid = {
 		priority = {
 			factor = 600
 			modifier = { 
@@ -237,7 +237,7 @@ R56_fighter = {
 
 
 	########  FW 190 D-12 (late)  ########
-	R56_improved_fighter_late = {
+	R56_generic_improved_fighter_late = {
 		priority = {
 			factor = 600
 			modifier = { 
@@ -290,7 +290,7 @@ R56_fighter = {
 
 
 	########  Ta 152 (early)  ########
-	R56_advanced_fighter_early = {
+	R56_generic_advanced_fighter_early = {
 		priority = {
 			factor = 600
 			modifier = { 
@@ -336,7 +336,7 @@ R56_fighter = {
 
 
 	########  Ta 152 C-3 (mid)  ########
-	R56_advanced_fighter_mid = {
+	R56_generic_advanced_fighter_mid = {
 		priority = {
 			factor = 600
 			modifier = { 
@@ -395,7 +395,7 @@ R56_fighter = {
 
 
 	########  Me 262 (late, prop airframe)  ########
-	R56_advanced_fighter_late = {
+	R56_generic_advanced_fighter_late = {
 		priority = {
 			factor = 600
 			modifier = { 
@@ -599,7 +599,7 @@ R56_fighter = {
 	}
 }
 
-R56_CAS = { 
+R56_generic_CAS = { 
     category = air
 
 	roles = {
@@ -611,7 +611,7 @@ R56_CAS = {
 	}
  }
 
-R56_naval_bomber = {
+R56_generic_naval_bomber = {
 	category = air
 
 	roles = {
@@ -881,7 +881,7 @@ R56_naval_bomber = {
 	}
 }
 
-R56_cv_fighter = {
+R56_generic_cv_fighter = {
     category = air
 
 	roles = {
@@ -889,7 +889,7 @@ R56_cv_fighter = {
 	}
 }
 
-R56_cv_naval_bomber = {
+R56_generic_cv_naval_bomber = {
 	category = air
 
 	roles = {
@@ -897,7 +897,7 @@ R56_cv_naval_bomber = {
 	}
 }
 
-R56_tactical_bomber = {
+R56_generic_tactical_bomber = {
 	category = air
 
 	roles = {
@@ -905,7 +905,7 @@ R56_tactical_bomber = {
 	}
 }
 
-R56_heavy_fighter = {
+R56_generic_heavy_fighter = {
 	category = air
 
 	roles = {
@@ -913,7 +913,7 @@ R56_heavy_fighter = {
 	}
 }
 
-R56_scout_plane = {
+R56_generic_scout_plane = {
 	category = air
 	
 	roles = {
@@ -921,7 +921,7 @@ R56_scout_plane = {
 	}
 }
 
-R56_strategic_bomber = {
+R56_generic_strategic_bomber = {
 	category = air
 
 	roles = {
@@ -929,7 +929,7 @@ R56_strategic_bomber = {
     }
 }
 
-R56_maritime_patrol = {
+R56_generic_maritime_patrol = {
 	category = air
 
 	roles = {
