@@ -19,6 +19,12 @@ R56_generic_fighter = {
 		WLS
 
 		GER
+		
+		SOV
+		MON
+		PRC
+		TAN
+
 		SWE
 
 		USA
