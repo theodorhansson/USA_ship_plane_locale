@@ -12,6 +12,8 @@ R56_generic_fighter = {
 		SAF
 		SCO
 		WLS
+		
+		GER
 		SWE
 	}
 
