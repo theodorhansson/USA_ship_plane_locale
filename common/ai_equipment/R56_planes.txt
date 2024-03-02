@@ -424,7 +424,7 @@ R56_fighter = {
 					module = heavy_mg_4x
 					module = light_mg_4x
 				}
-				fixed_auxiliary_weapon_slot_2 = empty
+				fixed_auxiliary_weapon_slot_2 = { module = AA_rocket_rails module = empty}
 				fixed_auxiliary_weapon_slot_3 = empty
 				engine_type_slot = jet_engine_2x
 				special_type_slot_1 = { module = armor_plate_small module = empty }
@@ -474,7 +474,7 @@ R56_fighter = {
 					module = heavy_mg_4x
 					module = light_mg_4x
 				}
-				fixed_auxiliary_weapon_slot_2 = empty
+				fixed_auxiliary_weapon_slot_2 = { module = AA_rocket_rails module = empty}
 				fixed_auxiliary_weapon_slot_3 = empty
 				engine_type_slot = jet_engine_2x
 				special_type_slot_1 = { module = armor_plate_small module = empty }
