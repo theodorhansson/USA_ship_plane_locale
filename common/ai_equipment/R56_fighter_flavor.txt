@@ -1978,7 +1978,7 @@ R56_SWE_fighter = {
 	}
 
 
-	########  FFVS J 22 (mid)  ########
+	########  FFVS J 22B (mid)  ########
 	R56_SWE_improved_fighter_mid = {
 		priority = {
 			factor = 600
@@ -1999,7 +1999,7 @@ R56_SWE_fighter = {
 			match_value = 300
 			type = small_plane_airframe_2
 			modules = {
-				fixed_main_weapon_slot = { module = heavy_mg_2x module = light_mg_2x }
+				fixed_main_weapon_slot = { module = heavy_mg_2x module = light_mg_4x }
 				fixed_auxiliary_weapon_slot_1 = { module = heavy_mg_2x module = light_mg_2x }
 				fixed_auxiliary_weapon_slot_2 = empty
 				engine_type_slot = engine_2_1x
@@ -2020,7 +2020,7 @@ R56_SWE_fighter = {
 	}
 
 
-	########  FFVS J 22 (late)  ########
+	########  FFVS J 22B+ (late)  ########
 	R56_SWE_improved_fighter_late = {
 		priority = {
 			factor = 600
@@ -2036,8 +2036,8 @@ R56_SWE_fighter = {
 			match_value = 300
 			type = small_plane_airframe_2
 			modules = {
-				fixed_main_weapon_slot = { module = heavy_mg_2x module = light_mg_2x }
-				fixed_auxiliary_weapon_slot_1 = { module = heavy_mg_2x module = light_mg_2x }
+				fixed_main_weapon_slot = { module = heavy_mg_4x module = light_mg_4x }
+				fixed_auxiliary_weapon_slot_1 = { module = heavy_mg_2x module = light_mg_4x }
 				fixed_auxiliary_weapon_slot_2 = empty
 				engine_type_slot = engine_2_1x
 				special_type_slot_1 = { module = armor_plate_small module = empty }
@@ -2076,16 +2076,16 @@ R56_SWE_fighter = {
 				fixed_main_weapon_slot = { 
 					module = aircraft_cannon_2_1x
 					module = aircraft_cannon_1_1x
-					module = heavy_mg_4x
+					module = heavy_mg_2x
 					module = light_mg_4x
 				}
 				fixed_auxiliary_weapon_slot_1 = {
 					module = heavy_mg_2x
-					module = light_mg_2x
+					module = light_mg_4x
 				}
 				fixed_auxiliary_weapon_slot_2 = {
 					module = heavy_mg_2x
-					module = light_mg_2x
+					module = light_mg_4x
 				}
 				fixed_auxiliary_weapon_slot_3 = empty
 				engine_type_slot = engine_3_1x
@@ -2135,16 +2135,16 @@ R56_SWE_fighter = {
 				}
 				fixed_auxiliary_weapon_slot_1 = {
 					module = heavy_mg_2x
-					module = light_mg_2x
+					module = light_mg_4x
 				}
 				fixed_auxiliary_weapon_slot_2 = {
 					module = heavy_mg_2x
-					module = light_mg_2x
+					module = light_mg_4x
 				}
 				fixed_auxiliary_weapon_slot_3 = empty
 				engine_type_slot = engine_4_1x
 				special_type_slot_1 = { module = armor_plate_small module = empty }
-				special_type_slot_2 = empty
+				special_type_slot_2 = { module = drop_tanks module = empty }
 				special_type_slot_3 = empty	
 			}
 		}
@@ -2179,21 +2179,21 @@ R56_SWE_fighter = {
 				fixed_main_weapon_slot = { 
 					module = aircraft_cannon_2_1x
 					module = aircraft_cannon_1_1x
-					module = heavy_mg_4x
+					module = heavy_mg_2x
 					module = light_mg_4x
 				}
 				fixed_auxiliary_weapon_slot_1 = {
 					module = heavy_mg_2x
-					module = light_mg_2x
+					module = light_mg_4x
 				}
 				fixed_auxiliary_weapon_slot_2 = {
 					module = heavy_mg_2x
-					module = light_mg_2x
+					module = light_mg_4x
 				}
 				fixed_auxiliary_weapon_slot_3 = empty
 				engine_type_slot = jet_engine_1x
 				special_type_slot_1 = { module = armor_plate_small module = empty }
-				special_type_slot_2 = empty
+				special_type_slot_2 = { module = drop_tanks module = empty }
 				special_type_slot_3 = empty	
 			}
 		}
@@ -2228,21 +2228,21 @@ R56_SWE_fighter = {
 				fixed_main_weapon_slot = { 
 					module = aircraft_cannon_2_1x
 					module = aircraft_cannon_1_1x
-					module = heavy_mg_4x
+					module = heavy_mg_2x
 					module = light_mg_4x
 				}
 				fixed_auxiliary_weapon_slot_1 = {
 					module = heavy_mg_2x
-					module = light_mg_2x
+					module = light_mg_4x
 				}
 				fixed_auxiliary_weapon_slot_2 = {
 					module = heavy_mg_2x
-					module = light_mg_2x
-				}
+					module = light_mg_4x
+				}	
 				fixed_auxiliary_weapon_slot_3 = empty
 				engine_type_slot = jet_engine_1x
 				special_type_slot_1 = { module = armor_plate_small module = empty }
-				special_type_slot_2 = empty
+				special_type_slot_2 = { module = drop_tanks module = empty }
 				special_type_slot_3 = empty	
 			}
 		}
@@ -2282,8 +2282,8 @@ R56_SWE_fighter = {
 					module = aircraft_cannon_2_2x
 					module = large_aircraft_cannon_2x
 					module = aircraft_cannon_1_2x
-					module = heavy_mg_2x
-					module = light_mg_2x
+					module = heavy_mg_4x
+					module = light_mg_4x
 				}
 				fixed_auxiliary_weapon_slot_1 = {
 					module = aircraft_cannon_2_2x
@@ -2332,8 +2332,8 @@ R56_SWE_fighter = {
 					module = aircraft_cannon_2_2x
 					module = large_aircraft_cannon_2x
 					module = aircraft_cannon_1_2x
-					module = heavy_mg_2x
-					module = light_mg_2x
+					module = heavy_mg_4x
+					module = light_mg_4x
 				}
 				fixed_auxiliary_weapon_slot_1 = {
 					module = aircraft_cannon_2_2x
