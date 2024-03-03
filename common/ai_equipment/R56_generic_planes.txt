@@ -380,7 +380,7 @@ R56_generic_fighter = {
 		enable = {
 			AND = {
 				has_tech = engines_4
-				NOT = { has_tech = semi_modern_rocket_engines}
+				NOT = { has_tech = jet_engines}
 			}
 		}
 
