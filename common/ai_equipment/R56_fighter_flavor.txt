@@ -2119,7 +2119,7 @@ R56_SWE_fighter = {
 		enable = {
 			AND = {
 				has_tech = engines_4
-				NOT = { has_tech = semi_modern_rocket_engines}
+				NOT = { has_tech = jet_engines }
 			}
 		}
 
@@ -2542,11 +2542,11 @@ R56_USA_fighter = {
 			match_value = 290
 			type = small_plane_airframe_2
 			modules = {
-				fixed_main_weapon_slot = { module = heavy_mg_4x module = light_mg_4x}
-				fixed_auxiliary_weapon_slot_1 = empty
+				fixed_main_weapon_slot = { module = heavy_mg_2x module = light_mg_4x}
+				fixed_auxiliary_weapon_slot_1 = { module = heavy_mg_2x module = light_mg_2x}
 				fixed_auxiliary_weapon_slot_2 = empty
 				engine_type_slot = engine_2_1x
-				special_type_slot_1 = { module = armor_plate_small module = empty }
+				special_type_slot_1 = empty
 				special_type_slot_2 = { module = drop_tanks module = empty }	
 				special_type_slot_3 = empty	
 			}
@@ -2659,13 +2659,13 @@ R56_USA_fighter = {
 			type = small_plane_airframe_3
 			modules = {
 				fixed_main_weapon_slot = { module = heavy_mg_4x module = light_mg_4x }
-				fixed_auxiliary_weapon_slot_1 = { module = heavy_mg_2x module = light_mg_2x }
+				fixed_auxiliary_weapon_slot_1 = { module = heavy_mg_2x module = light_mg_4x }
 				fixed_auxiliary_weapon_slot_2 = empty
 				fixed_auxiliary_weapon_slot_3 = empty
 				engine_type_slot = engine_3_1x
-				special_type_slot_1 = { module = armor_plate_small module = empty }
-				special_type_slot_2 = { module = drop_tanks module = empty }
-				special_type_slot_3 = empty	
+				special_type_slot_1 = { module = self_sealing_fuel_tanks_small module = empty }
+				special_type_slot_2 = { module = fuel_tanks_small module = empty }
+				special_type_slot_3 = { module = armor_plate_small module = empty }
 			}
 		}
 
@@ -2706,10 +2706,10 @@ R56_USA_fighter = {
 				fixed_auxiliary_weapon_slot_2 = empty
 				fixed_auxiliary_weapon_slot_3 = empty
 				engine_type_slot = engine_4_1x
-				special_type_slot_1 = { module = armor_plate_small module = empty }
-				special_type_slot_2 = { module = drop_tanks module = empty }
-				special_type_slot_3 = { module = fuel_tanks_small module = empty }	
-				special_type_slot_4 = { module = armor_plate_small module = empty }	
+				special_type_slot_1 = { module = self_sealing_fuel_tanks_small module = empty }
+				special_type_slot_2 = { module = fuel_tanks_small module = empty }
+				special_type_slot_3 = { module = armor_plate_small module = empty }
+				special_type_slot_4 = { module = drop_tanks module = empty }
 			}
 		}
 
@@ -2745,7 +2745,7 @@ R56_USA_fighter = {
 					module = large_aircraft_cannon_1x
 					module = aircraft_cannon_1_1x
 					module = heavy_mg_2x
-					module = light_mg_2x
+					module = light_mg_4x
 				}
 				fixed_auxiliary_weapon_slot_1 = {
 					module = heavy_mg_4x
@@ -2753,10 +2753,10 @@ R56_USA_fighter = {
 				}
 				fixed_auxiliary_weapon_slot_2 = empty
 				fixed_auxiliary_weapon_slot_3 = empty
-				engine_type_slot = jet_engine_2x
-				special_type_slot_1 = { module = armor_plate_small module = empty }
-				special_type_slot_2 = { module = drop_tanks module = empty }
-				special_type_slot_3 = empty	
+				engine_type_slot = jet_engine_1x
+				special_type_slot_1 = { module = self_sealing_fuel_tanks_small module = empty }
+				special_type_slot_2 = { module = fuel_tanks_small module = empty }
+				special_type_slot_3 = { module = drop_tanks module = empty }	
 			}
 		}
 
@@ -2797,10 +2797,10 @@ R56_USA_fighter = {
 				}
 				fixed_auxiliary_weapon_slot_2 = empty
 				fixed_auxiliary_weapon_slot_3 = empty
-				engine_type_slot = jet_engine_2x
-				special_type_slot_1 = { module = armor_plate_small module = empty }
-				special_type_slot_2 = { module = drop_tanks module = empty }
-				special_type_slot_3 = empty
+				engine_type_slot = jet_engine_1x
+				special_type_slot_1 = { module = self_sealing_fuel_tanks_small module = empty }
+				special_type_slot_2 = { module = fuel_tanks_small module = empty }
+				special_type_slot_3 = { module = drop_tanks module = empty }
 			}
 		}
 
@@ -2852,7 +2852,7 @@ R56_USA_fighter = {
 				fixed_auxiliary_weapon_slot_2 = empty
 				fixed_auxiliary_weapon_slot_3 = empty
 				engine_type_slot = jet_engine_1x_2
-				special_type_slot_1 = { module = armor_plate_small module = empty }
+				special_type_slot_1 = { module = self_sealing_fuel_tanks_small module = empty }
 				special_type_slot_2 = { module = fuel_tanks_small module = drop_tanks module = empty }
 				special_type_slot_3 = { module = fuel_tanks_small module = empty }
 				special_type_slot_4 = { module = armor_plate_small module = empty }
@@ -2902,7 +2902,7 @@ R56_USA_fighter = {
 				fixed_auxiliary_weapon_slot_2 = { module = guided_AA_rocket_rails module = AA_rocket_rails module = empty}
 				fixed_auxiliary_weapon_slot_3 = { module = guided_AA_rocket_rails module = AA_rocket_rails module = empty}
 				engine_type_slot = jet_engine_1x_3
-				special_type_slot_1 = { module = armor_plate_small module = empty }
+				special_type_slot_1 = { module = self_sealing_fuel_tanks_small module = empty }
 				special_type_slot_2 = { module = fuel_tanks_small module = drop_tanks module = empty }
 				special_type_slot_3 = { module = fuel_tanks_small module = empty }
 				special_type_slot_4 = { module = armor_plate_small module = empty }
