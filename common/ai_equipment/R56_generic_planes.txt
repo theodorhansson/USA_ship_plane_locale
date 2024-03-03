@@ -21,6 +21,7 @@ R56_generic_fighter = {
 		GER
 		
 		SOV
+		DDR
 		MON
 		PRC
 		TAN
@@ -29,6 +30,7 @@ R56_generic_fighter = {
 
 		USA
 		PHI
+		WGR
 	}
 
 	roles = {

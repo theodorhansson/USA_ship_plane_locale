@@ -1202,6 +1202,7 @@ R56_SOV_fighter = {
 
 	available_for = {
 		SOV
+		DDR
 		MON
 		PRC
 		TAN
@@ -2371,6 +2372,7 @@ R56_USA_fighter = {
 	available_for = {
 		USA
 		PHI
+		WGR
 	}
 
 	roles = {
