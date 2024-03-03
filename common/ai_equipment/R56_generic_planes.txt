@@ -475,7 +475,7 @@ R56_generic_fighter = {
 
 
 	########  Me 262 D (early, jet airframe)  ########
-	R_56_generic_jet_fighter_early = {
+	R56_generic_jet_fighter_early = {
 		priority = {
 			factor = 10
 			modifier = { 
@@ -524,7 +524,7 @@ R56_generic_fighter = {
 	}
 
 	########  Mig-15 (mid)  ########
-	R_56_generic_jet_fighter_mid = {
+	R56_generic_jet_fighter_mid = {
 		priority = {
 			factor = 10
 			modifier = { 
@@ -579,7 +579,7 @@ R56_generic_fighter = {
 	}
 
 	########  Mig-19 (late)  ########
-	R_56_generic_jet_fighter_late = {
+	R56_generic_jet_fighter_late = {
 		priority = {
 			factor = 10
 			modifier = { 

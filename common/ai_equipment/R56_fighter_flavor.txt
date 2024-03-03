@@ -1040,7 +1040,7 @@ R56_GER_fighter = {
 
 
 	########  Me 262 D (early, jet airframe)  ########
-	R_56_GER_jet_fighter_early = {
+	R56_GER_jet_fighter_early = {
 		priority = {
 			factor = 10
 			modifier = { 
@@ -1089,7 +1089,7 @@ R56_GER_fighter = {
 	}
 
 	########  Mig-15 (mid)  ########
-	R_56_GER_jet_fighter_mid = {
+	R56_GER_jet_fighter_mid = {
 		priority = {
 			factor = 10
 			modifier = { 
@@ -1144,7 +1144,7 @@ R56_GER_fighter = {
 	}
 
 	########  Mig-19 (late)  ########
-	R_56_GER_jet_fighter_late = {
+	R56_GER_jet_fighter_late = {
 		priority = {
 			factor = 10
 			modifier = { 
@@ -2777,7 +2777,7 @@ R56_USA_fighter = {
 
 
 	########  Lockheed P-80 Shooting Star (early, jet airframe)  ########
-	R_56_USA_jet_fighter_early = {
+	R56_USA_jet_fighter_early = {
 		priority = {
 			factor = 10
 			modifier = { 
@@ -2820,7 +2820,7 @@ R56_USA_fighter = {
 	}
 
 	########  North American F-86F Sabre (mid)  ########
-	R_56_USA_jet_fighter_mid = {
+	R56_USA_jet_fighter_mid = {
 		priority = {
 			factor = 10
 			modifier = { 
@@ -2875,7 +2875,7 @@ R56_USA_fighter = {
 	}
 
 	########  North American F-100 Super Sabre (late)  ########
-	R_56_USA_jet_fighter_late = {
+	R56_USA_jet_fighter_late = {
 		priority = {
 			factor = 10
 			modifier = { 
