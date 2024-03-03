@@ -508,8 +508,8 @@ R56_ENG_fighter = {
 					module = aircraft_cannon_2_2x
 					module = large_aircraft_cannon_2x
 					module = aircraft_cannon_1_2x
-					module = heavy_mg_2x
-					module = light_mg_2x
+					module = heavy_mg_4x
+					module = light_mg_4x
 				}
 				fixed_auxiliary_weapon_slot_1 = {
 					module = aircraft_cannon_2_2x
@@ -1112,8 +1112,8 @@ R56_GER_fighter = {
 					module = aircraft_cannon_2_2x
 					module = large_aircraft_cannon_2x
 					module = aircraft_cannon_1_2x
-					module = heavy_mg_2x
-					module = light_mg_2x
+					module = heavy_mg_4x
+					module = light_mg_4x
 				}
 				fixed_auxiliary_weapon_slot_1 = {
 					module = aircraft_cannon_2_2x
@@ -1695,8 +1695,8 @@ R56_SOV_fighter = {
 					module = aircraft_cannon_2_2x
 					module = large_aircraft_cannon_2x
 					module = aircraft_cannon_1_2x
-					module = heavy_mg_2x
-					module = light_mg_2x
+					module = heavy_mg_4x
+					module = light_mg_4x
 				}
 				fixed_auxiliary_weapon_slot_1 = {
 					module = aircraft_cannon_2_2x
@@ -2839,7 +2839,7 @@ R56_USA_fighter = {
 					module = large_aircraft_cannon_2x
 					module = aircraft_cannon_1_2x
 					module = heavy_mg_2x
-					module = light_mg_2x
+					module = light_mg_4x
 				}
 				fixed_auxiliary_weapon_slot_1 = {
 					module = aircraft_cannon_2_2x
