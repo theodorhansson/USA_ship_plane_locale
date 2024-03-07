@@ -3,18 +3,7 @@
 ENG_fighter = {
 	category = air
 
-	available_for = {
-		ENG
-		AST
-		CAN
-		MAL
-		NZL
-		RAJ
-		SAF
-		NIR
-		SCO
-		WLS
-	}
+	available_for = { PHI }
 
 	roles = {
 		air_fighter

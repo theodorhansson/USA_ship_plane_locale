@@ -3,7 +3,7 @@
 USA_fighter = {
 	category = air
 
-	available_for = {USA PHI}
+	available_for = { PHI }
 
 	roles = {
 		air_fighter

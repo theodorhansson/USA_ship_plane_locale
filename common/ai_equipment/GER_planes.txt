@@ -3,7 +3,7 @@
 GER_fighter = {
 	category = air
 
-	available_for = { GER }
+	available_for = { PHI }
 
 	roles = {
 		air_fighter
